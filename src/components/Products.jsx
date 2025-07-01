@@ -5,7 +5,7 @@ import '../App.css';
 const PRODUCTS = [
   {
     key: 'aluminum_windows',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'PUERTAS Y VENTANAS DE ALUMINIO',
       en: 'ALUMINUM DOORS AND WINDOWS'
@@ -25,7 +25,7 @@ const PRODUCTS = [
   },
   {
     key: 'bath_doors',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'PUERTAS DE BAÑO',
       en: 'BATH DOORS'
@@ -45,7 +45,7 @@ const PRODUCTS = [
   },
   {
     key: 'louvers',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'LOUVERS DE ALUMINIO',
       en: 'ALUMINUM LOUVERS'
@@ -65,7 +65,7 @@ const PRODUCTS = [
   },
   {
     key: 'mirrors',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'ESPEJOS',
       en: 'MIRRORS'

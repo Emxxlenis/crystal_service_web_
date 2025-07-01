@@ -23,9 +23,9 @@ function App() {
       <LanguageProvider>
         <Router>
           <ScrollToTop />
-          <div className="App">
-            <Navbar />
-            <main className="main-content">
+        <div className="App">
+          <Navbar />
+          <main className="main-content">
               <Routes>
                 <Route path="/" element={
                   <>
@@ -42,9 +42,9 @@ function App() {
                 <Route path="/terminos" element={<TermsConditions />} />
                 <Route path="/cookies" element={<CookiesPolicy />} />
               </Routes>
-            </main>
+          </main>
             <Footer />
-          </div>
+        </div>
         </Router>
       </LanguageProvider>
     </ThemeProvider>

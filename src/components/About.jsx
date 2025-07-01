@@ -14,7 +14,7 @@ const About = () => {
           <p className="about2-history-desc">{t('about.history.description')}</p>
         </div>
         <div className="about2-history-imgbox">
-          <img src={process.env.PUBLIC_URL + '/products/fondo_home.jpg'} alt="Historia Crystal Service" className="about2-history-img" />
+          <img src="/products/fondo_home.jpg" alt="Historia Crystal Service" className="about2-history-img" />
         </div>
       </div>
       <div className="about2-mv-row">

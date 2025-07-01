@@ -5,7 +5,7 @@ import '../App.css';
 const SERVICES = [
   {
     key: 'modelado_3d',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'MODELADO 3D',
       en: '3D MODELING'
@@ -17,7 +17,7 @@ const SERVICES = [
   },
   {
     key: 'planos',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'PLANOS DE CONSTRUCCIÓN',
       en: 'CONSTRUCTION PLANS'
@@ -29,7 +29,7 @@ const SERVICES = [
   },
   {
     key: 'render',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'RENDERIZADO',
       en: 'RENDERING'
@@ -41,7 +41,7 @@ const SERVICES = [
   },
   {
     key: 'asesoria',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'ASESORÍA',
       en: 'CONSULTING'

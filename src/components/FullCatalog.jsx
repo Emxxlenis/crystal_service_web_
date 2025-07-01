@@ -5,7 +5,7 @@ import '../App.css';
 const PRODUCTS = [
   {
     key: 'aluminum_windows',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas y Ventanas de Aluminio',
       en: 'Aluminum Doors and Windows'
@@ -18,7 +18,7 @@ const PRODUCTS = [
   },
   {
     key: 'bath_doors',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas de Baño',
       en: 'Bath Doors'
@@ -31,7 +31,7 @@ const PRODUCTS = [
   },
   {
     key: 'louvers',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Louvers de Aluminio',
       en: 'Aluminum Louvers'
@@ -44,7 +44,7 @@ const PRODUCTS = [
   },
   {
     key: 'mirrors',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Espejos',
       en: 'Mirrors'
@@ -57,7 +57,7 @@ const PRODUCTS = [
   },
   {
     key: 'glass_railings',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Barandales de Vidrio',
       en: 'Glass Railings'
@@ -70,7 +70,7 @@ const PRODUCTS = [
   },
   {
     key: 'steel_doors',
-    img: process.env.PUBLIC_URL + '/products/fondo_home.jpg',
+    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas de Acero Inoxidable',
       en: 'Stainless Steel Doors'
