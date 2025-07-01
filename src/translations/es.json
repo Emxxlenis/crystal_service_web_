@@ -1,0 +1,295 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "whatsapp": "WhatsApp",
+    "languageSwitch": "Cambiar a Inglés",
+    "darkMode": "Cambiar a modo oscuro",
+    "lightMode": "Cambiar a modo claro",
+    "toggleMenu": "Alternar menú"
+  },
+  "hero": {
+    "title": "Soluciones en vidrio, aluminio y acero para tus proyectos",
+    "subtitle": "Más de 10 años de experiencia creando espacios únicos y funcionales.",
+    "whatsapp": "WhatsApp",
+    "trust": "Confianza, calidad y atención personalizada en cada proyecto."
+  },
+  "catalog": {
+    "title": "Catálogo de Productos",
+    "allProducts": "Todos los productos",
+    "seeMore": "Ver más productos",
+    "quoteWhatsapp": "Cotizar por WhatsApp",
+    "filters": {
+      "all": "Todos",
+      "aluminum": "Aluminio",
+      "glass": "Vidrio",
+      "mirror": "Espejo",
+      "steel": "Acero"
+    }
+  },
+  "products": {
+    "title": "PRODUCTOS",
+    "aluminum_windows": {
+      "name": "PUERTAS Y VENTANAS DE ALUMINIO",
+      "description": "Soluciones modernas en aluminio para puertas y ventanas.",
+      "color": "Plata, Blanco, Negro",
+      "type": "Corredizas, Abatibles"
+    },
+    "bath_doors": {
+      "name": "PUERTAS DE BAÑO",
+      "description": "Puertas de baño de vidrio templado y diseño elegante.",
+      "color": "Transparente, Esmerilado",
+      "type": "Corredizas, Abatibles"
+    },
+    "louvers": {
+      "name": "LOUVERS DE ALUMINIO",
+      "description": "Louvers de aluminio para ventilación y diseño.",
+      "color": "Plata, Blanco, Negro",
+      "type": "Fijos, Móviles"
+    },
+    "mirrors": {
+      "name": "ESPEJOS",
+      "description": "Espejos a medida para cualquier espacio.",
+      "color": "Plata",
+      "type": ""
+    },
+    "glass_railings": {
+      "name": "Barandales de Vidrio",
+      "description": "Barandales de vidrio templado para interiores y exteriores."
+    },
+    "steel_doors": {
+      "name": "Puertas de Acero Inoxidable",
+      "description": "Puertas de acero inoxidable para máxima seguridad y durabilidad."
+    },
+    "detail": {
+      "color": "Color",
+      "type": "Tipo",
+      "quote": "Cotizar medida",
+      "backToProducts": "Volver a productos"
+    }
+  },
+  "services": {
+    "title": "SERVICIOS",
+    "description": "En Crystal Service JJ ofrecemos una gama completa de servicios para tus proyectos: modelado 3D, planos de construcción, renderizado, asesoría e instalación. Nuestro equipo está comprometido con la calidad, la atención personalizada y la satisfacción de nuestros clientes en cada etapa del proceso.",
+    "3d_modeling": {
+      "title": "MODELADO 3D",
+      "description": "Creamos modelos 3D precisos para visualizar tus proyectos antes de construirlos."
+    },
+    "construction_plans": {
+      "title": "PLANOS DE CONSTRUCCIÓN",
+      "description": "Elaboramos planos detallados para la correcta ejecución de tu obra."
+    },
+    "rendering": {
+      "title": "RENDERIZADO",
+      "description": "Imágenes realistas para presentar y vender tus ideas."
+    },
+    "consulting": {
+      "title": "ASESORÍA",
+      "description": "Te orientamos en cada etapa de tu proyecto para lograr los mejores resultados."
+    },
+    "detail": {
+      "quote": "Cotizar servicio",
+      "backToServices": "Volver a servicios"
+    }
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "subtitle": "En Crystal Service JJ, transformamos tus ideas en soluciones innovadoras en vidrio, aluminio y acero inoxidable.",
+    "history": {
+      "title": "Nuestra historia: Pasión y dedicación en cada proyecto de cristal y metal.",
+      "description": "En Crystal Service JJ, nos enorgullecemos de ofrecer soluciones personalizadas que combinan estética y funcionalidad. Nuestros valores fundamentales son la calidad, la innovación y la satisfacción del cliente, guiando cada paso de nuestro trabajo."
+    },
+    "mission": {
+      "title": "Misión",
+      "description": "Ofrecer soluciones integrales en vidrio, aluminio y acero, superando las expectativas de nuestros clientes a través de la calidad, la innovación y el servicio."
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "Ser la empresa líder en el sector, reconocida por la excelencia, la confianza y la satisfacción de nuestros clientes."
+    }
+  },
+  "contact": {
+    "title": "Descubre todo lo que podemos hacer por ti. ¡Hablemos!",
+    "form": {
+      "name": "Nombre *",
+      "phone": "Número de Teléfono *",
+      "email": "Email *",
+      "company": "Empresa",
+      "subject": "Asunto *",
+      "message": "Consulta *",
+      "submit": "Enviar",
+      "sending": "Enviando..."
+    },
+    "messages": {
+      "success": "¡Gracias por contactarnos!",
+      "error": "Hubo un error al enviar el formulario.",
+      "missingFields": "Por favor, completa todos los campos requeridos.",
+      "invalidEmail": "Por favor, ingresa un email válido."
+    }
+  },
+  "projects": {
+    "title": "Nuestros Clientes"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "offices": "Oficinas",
+    "moreInfo": "Más información",
+    "privacyPolicy": "Política de privacidad",
+    "termsConditions": "Términos y condiciones",
+    "cookiesPolicy": "Política de cookies",
+    "copyright": "Todos los derechos reservados.",
+    "address": "31 J68, SAN MIGUELITO, Panama"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Junio 2025",
+    "tocTitle": "Contenido",
+    "contactTitle": "¿Tienes preguntas sobre nuestra política de privacidad?",
+    "contactSubtitle": "Nuestro equipo está aquí para ayudarte con cualquier consulta relacionada con la protección de tus datos personales.",
+    "sections": {
+      "info_collection": {
+        "title": "1. Información que Recopilamos",
+        "content": "Recopilamos información que usted nos proporciona directamente, como cuando completa formularios de contacto, solicita cotizaciones o se comunica con nosotros. Esta información puede incluir su nombre, dirección de correo electrónico, número de teléfono, nombre de la empresa y detalles de su consulta."
+      },
+      "info_usage": {
+        "title": "2. Cómo Utilizamos su Información",
+        "content": "Utilizamos la información recopilada para: responder a sus consultas y solicitudes de cotización, proporcionar servicios y productos solicitados, comunicarnos con usted sobre nuestros servicios, mejorar nuestros servicios y cumplir con obligaciones legales."
+      },
+      "info_sharing": {
+        "title": "3. Compartir Información",
+        "content": "No vendemos, alquilamos ni compartimos su información personal con terceros, excepto cuando sea necesario para proporcionar nuestros servicios, cumplir con obligaciones legales o con su consentimiento explícito."
+      },
+      "data_security": {
+        "title": "4. Seguridad de Datos",
+        "content": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción."
+      },
+      "your_rights": {
+        "title": "5. Sus Derechos",
+        "content": "Usted tiene derecho a acceder, corregir, eliminar o restringir el procesamiento de su información personal. También puede retirar su consentimiento en cualquier momento. Para ejercer estos derechos, contáctenos."
+      },
+      "cookies": {
+        "title": "6. Cookies y Tecnologías Similares",
+        "content": "Nuestro sitio web puede utilizar cookies y tecnologías similares para mejorar su experiencia de navegación. Puede configurar su navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio."
+      },
+      "third_party_links": {
+        "title": "7. Enlaces a Terceros",
+        "content": "Nuestro sitio web puede contener enlaces a sitios web de terceros. No somos responsables de las prácticas de privacidad de estos sitios. Le recomendamos revisar sus políticas de privacidad."
+      },
+      "policy_changes": {
+        "title": "8. Cambios a esta Política",
+        "content": "Podemos actualizar esta política de privacidad ocasionalmente. Le notificaremos sobre cambios significativos publicando la nueva política en nuestro sitio web."
+      },
+      "contact": {
+        "title": "9. Contacto",
+        "content": "Si tiene preguntas sobre esta política de privacidad o nuestras prácticas de privacidad, contáctenos a través de los medios proporcionados en la sección de contacto."
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: Junio 2025",
+    "tocTitle": "Contenido",
+    "contactTitle": "¿Tienes preguntas sobre nuestros términos y condiciones?",
+    "contactSubtitle": "Nuestro equipo legal está disponible para aclarar cualquier duda sobre nuestros términos de servicio.",
+    "sections": {
+      "acceptance": {
+        "title": "1. Aceptación de los Términos",
+        "content": "Al acceder y utilizar este sitio web, usted acepta estar sujeto a estos términos y condiciones de uso. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web."
+      },
+      "service_description": {
+        "title": "2. Descripción del Servicio",
+        "content": "Crystal Service es una empresa especializada en servicios de vidrio, aluminio y acero. Ofrecemos productos y servicios relacionados con la fabricación, instalación y mantenimiento de estructuras en estos materiales."
+      },
+      "website_use": {
+        "title": "3. Uso del Sitio Web",
+        "content": "Usted se compromete a utilizar este sitio web únicamente para fines legales y de acuerdo con estos términos. No debe usar el sitio para transmitir material ilegal, ofensivo, difamatorio o que viole derechos de terceros."
+      },
+      "intellectual_property": {
+        "title": "4. Propiedad Intelectual",
+        "content": "Todo el contenido de este sitio web, incluyendo textos, imágenes, logos, diseños y software, es propiedad de Crystal Service o de sus licenciantes y está protegido por las leyes de propiedad intelectual."
+      },
+      "product_info": {
+        "title": "5. Información del Producto",
+        "content": "Nos esforzamos por proporcionar información precisa sobre nuestros productos y servicios. Sin embargo, no garantizamos que la información sea completamente precisa, actualizada o libre de errores. Los precios y disponibilidad pueden cambiar sin previo aviso."
+      },
+      "quotes_orders": {
+        "title": "6. Cotizaciones y Pedidos",
+        "content": "Las cotizaciones proporcionadas a través de este sitio web son estimaciones y pueden estar sujetas a cambios. Los pedidos están sujetos a disponibilidad y confirmación. Nos reservamos el derecho de rechazar cualquier pedido."
+      },
+      "liability": {
+        "title": "7. Limitación de Responsabilidad",
+        "content": "Crystal Service no será responsable por daños directos, indirectos, incidentales, especiales o consecuentes que resulten del uso o la imposibilidad de usar este sitio web o nuestros servicios."
+      },
+      "external_links": {
+        "title": "8. Enlaces Externos",
+        "content": "Este sitio web puede contener enlaces a sitios web de terceros. No somos responsables del contenido o las prácticas de privacidad de estos sitios. El uso de enlaces externos es bajo su propio riesgo."
+      },
+      "modifications": {
+        "title": "9. Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Su uso continuado del sitio constituye aceptación de los términos modificados."
+      },
+      "governing_law": {
+        "title": "10. Ley Aplicable",
+        "content": "Estos términos y condiciones se rigen por las leyes de Panamá. Cualquier disputa será resuelta en los tribunales competentes de Panamá."
+      },
+      "contact": {
+        "title": "11. Contacto",
+        "content": "Si tiene preguntas sobre estos términos y condiciones, contáctenos a través de los medios proporcionados en la sección de contacto."
+      }
+    }
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: Junio 2025",
+    "tocTitle": "Contenido",
+    "contactTitle": "¿Tienes preguntas sobre nuestra política de cookies?",
+    "contactSubtitle": "Nuestro equipo técnico está disponible para explicarte cómo utilizamos las cookies en nuestro sitio web.",
+    "sections": {
+      "what_are_cookies": {
+        "title": "1. ¿Qué son las Cookies?",
+        "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (computadora, tablet o móvil) cuando visita nuestro sitio web. Estas cookies nos ayudan a mejorar su experiencia de navegación y a entender cómo utiliza nuestro sitio."
+      },
+      "types_of_cookies": {
+        "title": "2. Tipos de Cookies que Utilizamos",
+        "content": "Utilizamos diferentes tipos de cookies: Cookies técnicas (necesarias para el funcionamiento del sitio), cookies de análisis (para entender el uso del sitio), cookies de preferencias (para recordar sus configuraciones) y cookies de terceros (de servicios externos como Google Analytics)."
+      },
+      "technical_cookies": {
+        "title": "3. Cookies Técnicas",
+        "content": "Estas cookies son esenciales para el funcionamiento correcto de nuestro sitio web. Incluyen cookies que permiten recordar sus preferencias de idioma, tema (claro/oscuro) y otras configuraciones básicas. No se pueden desactivar sin afectar la funcionalidad del sitio."
+      },
+      "analytics_cookies": {
+        "title": "4. Cookies de Análisis",
+        "content": "Utilizamos cookies de análisis para comprender cómo los visitantes interactúan con nuestro sitio web. Esta información nos ayuda a mejorar la funcionalidad y el contenido del sitio. Los datos recopilados son anónimos y no identifican personalmente a los usuarios."
+      },
+      "third_party_cookies": {
+        "title": "5. Cookies de Terceros",
+        "content": "Nuestro sitio puede utilizar servicios de terceros como Google Analytics, que pueden establecer sus propias cookies. Estas cookies están sujetas a las políticas de privacidad de estos terceros. Le recomendamos revisar sus políticas de privacidad."
+      },
+      "cookie_management": {
+        "title": "6. Gestión de Cookies",
+        "content": "Puede controlar y gestionar las cookies a través de la configuración de su navegador. Puede eliminar cookies existentes y configurar su navegador para bloquear futuras cookies. Sin embargo, esto puede afectar la funcionalidad de nuestro sitio web."
+      },
+      "mobile_cookies": {
+        "title": "7. Cookies en Dispositivos Móviles",
+        "content": "Si accede a nuestro sitio web desde un dispositivo móvil, las cookies funcionan de manera similar a como lo hacen en computadoras de escritorio. Puede gestionar las cookies a través de la configuración de su navegador móvil."
+      },
+      "policy_updates": {
+        "title": "8. Actualizaciones de esta Política",
+        "content": "Podemos actualizar esta política de cookies ocasionalmente para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o regulatorias. Le notificaremos sobre cambios significativos publicando la política actualizada en nuestro sitio web."
+      },
+      "consent": {
+        "title": "9. Su Consentimiento",
+        "content": "Al continuar utilizando nuestro sitio web, usted consiente el uso de cookies de acuerdo con esta política. Si no está de acuerdo con el uso de cookies, puede configurar su navegador para rechazarlas, aunque esto puede afectar su experiencia de navegación."
+      },
+      "contact": {
+        "title": "10. Contacto",
+        "content": "Si tiene preguntas sobre nuestra política de cookies o cómo utilizamos las cookies, contáctenos a través de los medios proporcionados en la sección de contacto."
+      }
+    }
+  }
+}
+  
