@@ -10,11 +10,12 @@
     "validate-translations": "node scripts/validateTranslations.js"
   },
   "dependencies": {
+    "cloudinary": "^2.7.0",
+    "emailjs-com": "^3.2.0",
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
-    "emailjs-com": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
