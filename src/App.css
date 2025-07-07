@@ -5,18 +5,25 @@
   --text-primary: #23272f;
   --text-secondary: #6b7280;
   --border-color: #e5e7eb;
-  --accent-color: #52B552;
+  --accent-color: #70BF6F;
   --shadow: 0 2px 12px rgba(60, 60, 60, 0.06);
-  --navbar-bg: #fff;
-  --navbar-text: #23272f;
-  --navbar-border: #e5e7eb;
+  --navbar-bg: #ffffff;
+  --navbar-text: #333333;
+  --navbar-border: #e1e5e9;
+  --navbar-hover: #f8f9fa;
+  --navbar-active: #70BF6F;
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
+  --btn-bg: #f8f9fa;
+  --btn-hover: #e9ecef;
+  --btn-text: #495057;
   --contact-bg: #fff;
   --contact-label: #6b7280;
   --contact-input-bg: #f6f8fa;
   --contact-input-border: #e5e7eb;
   --contact-input-text: #23272f;
-  --contact-input-focus: #52B552;
+  --contact-input-focus: #70BF6F;
   --contact-success: #219653;
+  --transition: all 0.3s ease;
 }
 
 [data-theme="dark"] {
@@ -25,7 +32,17 @@
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
   --border-color: #404040;
-  --accent-color: #52B552;
+  --accent-color: #70BF6F;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --navbar-bg: #1a1a1a;
+  --navbar-text: #ffffff;
+  --navbar-border: #2d2d2d;
+  --navbar-hover: #2d2d2d;
+  --navbar-active: #70BF6F;
+  --navbar-shadow: rgba(0, 0, 0, 0.3);
+  --btn-bg: #2d2d2d;
+  --btn-hover: #3d3d3d;
+  --btn-text: #ffffff;
   --contact-bg: #181a1b;
   --contact-label: #b0b0b0;
   --contact-input-bg: #232526;
@@ -185,14 +202,14 @@
 }
 
 .whatsapp-btn {
-  background: transparent;
+  background: #70BF6F;
   color: #fff;
-  border: 1.5px solid #fff;
+  border: 1.5px solid #70BF6F;
 }
 .whatsapp-btn:hover {
-  background: #25d366;
+  background: #5a9a59;
   color: #fff;
-  border-color: #25d366;
+  border-color: #5a9a59;
 }
 
 .welcome-image-placeholder, .welcome-image, .image-placeholder-icon {
@@ -536,6 +553,7 @@
 }
 
 .redesigned-footer {
+  background-color: transparent;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -674,8 +692,8 @@
 }
 
 .navbar-btn.language-btn:focus, .navbar-btn.theme-btn:focus {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 2px;
+  outline: none;
+  outline-offset: 0;
 }
 
 .footer, .redesigned-footer-bottom {
@@ -693,6 +711,7 @@
   color: #429442 !important;
 }
 .footer {
+  background-color: transparent;
   border-top: 1px solid var(--navbar-border) !important;
   padding-top: 2rem;
 }
@@ -763,6 +782,16 @@
   max-width: 180px;
   width: auto;
   align-self: center;
+  background: #70BF6F;
+  color: #fff;
+  border: 1.5px solid #70BF6F;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.hero-whatsapp-btn:hover {
+  background: #5a9a59;
+  color: #fff;
+  border-color: #5a9a59;
 }
 .hero-trust {
   font-size: 1.1rem;
@@ -1562,6 +1591,185 @@
   color: #70BF6F;
 }
 
+/* Dark theme styles for footer */
+[data-theme="dark"] .footer {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .redesigned-footer {
+  background-color: transparent;
+}
+
+[data-theme="dark"] .redesigned-footer-bottom {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .footer-section h4 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .footer-link {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer-link:hover {
+  color: var(--accent-color);
+}
+
+[data-theme="dark"] .footer-contact-link {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer-contact-link:hover {
+  color: var(--accent-color);
+}
+
+[data-theme="dark"] .footer-social-link {
+  color: var(--text-secondary);
+  background-color: var(--btn-bg);
+}
+
+[data-theme="dark"] .footer-social-link:hover {
+  color: var(--accent-color);
+  background-color: var(--btn-hover);
+}
+
+/* Dark theme styles for catalog cards */
+[data-theme="dark"] .catalog-card {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .catalog-card:hover {
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+[data-theme="dark"] .catalog-info h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .catalog-info p {
+  color: var(--text-secondary);
+}
+
+/* Dark theme styles for product cards */
+[data-theme="dark"] .product-card {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .product-card:hover {
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+/* Dark theme styles for about section */
+[data-theme="dark"] .about-section {
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .about-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .about-subtitle {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .about-description {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .about-values-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .about-mission-title,
+[data-theme="dark"] .about-vision-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .about-mission-text,
+[data-theme="dark"] .about-vision-text {
+  color: var(--text-secondary);
+}
+
+/* Dark theme styles for privacy policy */
+[data-theme="dark"] .privacy-section {
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .privacy-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .privacy-date {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .privacy-section-title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .privacy-section-text {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .privacy-toc h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .privacy-toc a {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .privacy-toc a:hover {
+  color: var(--accent-color);
+}
+
+[data-theme="dark"] .privacy-contact h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .privacy-contact p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .privacy-contact-item a {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .privacy-contact-item a:hover {
+  color: var(--accent-color);
+}
+
+/* Dark theme styles for WhatsApp buttons */
+[data-theme="dark"] .whatsapp-btn {
+  background: #70BF6F;
+  color: #fff;
+  border: 1.5px solid #70BF6F;
+}
+
+[data-theme="dark"] .whatsapp-btn:hover {
+  background: #5a9a59;
+  color: #fff;
+  border-color: #5a9a59;
+}
+
+[data-theme="dark"] .hero-whatsapp-btn {
+  background: #70BF6F;
+  color: #fff;
+  border: 1.5px solid #70BF6F;
+}
+
+[data-theme="dark"] .hero-whatsapp-btn:hover {
+  background: #5a9a59;
+  color: #fff;
+  border-color: #5a9a59;
+}
+
 .about-section {
   max-width: 900px;
   margin: 0 auto 3rem auto;
@@ -2279,8 +2487,8 @@ button:active, .navbar-btn:active, .catalog-quote-btn:active, .product-btn:activ
 
 /* Feedback visual accesible */
 button:focus, .navbar-btn:focus, .catalog-quote-btn:focus, .product-btn:focus, .quote-btn:focus, .back-btn:focus, .whatsapp-btn:focus, .catalog-more-btn:focus, .project-more-btn:focus {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 2px;
+  outline: none;
+  outline-offset: 0;
 }
 
 /* Cursor pointer en todos los elementos interactivos */
@@ -2302,5 +2510,44 @@ html {
   }
   * {
     transition: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 2.5rem 1.5rem 2.2rem 1.5rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .about-title,
+  .about-subtitle,
+  .about-description {
+    text-align: center !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    margin-bottom: 1.5rem !important;
+    max-width: 420px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .about-title {
+    margin-bottom: 1.2rem !important;
+  }
+  .about-subtitle {
+    margin-bottom: 1.2rem !important;
+  }
+  .about-description {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .footer, .redesigned-footer {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+  .footer-logo-box, .redesigned-footer .footer-logo-box {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
   }
 }

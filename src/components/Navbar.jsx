@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LangContext';
-import { Link, NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const { language, toggleLanguage, t } = useLanguage();
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,15 +26,15 @@ const Navbar = () => {
     <nav className="navbar redesigned-navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-logo" aria-label="Inicio" onClick={closeMenu}>
-            <img src={process.env.PUBLIC_URL + '/icons/Crystal_g_iso.svg'} alt="Crystal Service Logo" style={{ height: '38px', verticalAlign: 'middle' }} />
+          <Link href="/" className="navbar-logo" aria-label="Inicio" onClick={closeMenu}>
+            <img src="/icons/Crystal_g_iso.svg" alt="Crystal Service Logo" style={{ height: '38px', verticalAlign: 'middle' }} />
           </Link>
         </div>
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <NavLink to="/" end className={({ isActive }) => 'navbar-link' + (isActive ? ' active' : '')} onClick={closeMenu}>{t('navigation.home')}</NavLink>
-          <NavLink to="/catalogo" className={({ isActive }) => 'navbar-link' + (isActive ? ' active' : '')} onClick={closeMenu}>{t('navigation.catalog')}</NavLink>
-          <NavLink to="/about" className={({ isActive }) => 'navbar-link' + (isActive ? ' active' : '')} onClick={closeMenu}>{t('navigation.about')}</NavLink>
-          <NavLink to="/contacto" className={({ isActive }) => 'navbar-link' + (isActive ? ' active' : '')} onClick={closeMenu}>{t('navigation.contact')}</NavLink>
+          <Link href="/" className={`navbar-link ${pathname === '/' ? 'active' : ''}`} onClick={closeMenu}>{t('navigation.home')}</Link>
+          <Link href="/catalogo" className={`navbar-link ${pathname === '/catalogo' ? 'active' : ''}`} onClick={closeMenu}>{t('navigation.catalog')}</Link>
+          <Link href="/about" className={`navbar-link ${pathname === '/about' ? 'active' : ''}`} onClick={closeMenu}>{t('navigation.about')}</Link>
+          <Link href="/contacto" className={`navbar-link ${pathname === '/contacto' ? 'active' : ''}`} onClick={closeMenu}>{t('navigation.contact')}</Link>
           <div className="navbar-menu-controls">
             <button 
               className="navbar-btn language-btn" 

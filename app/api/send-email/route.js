@@ -1,26 +1,21 @@
 import emailjs from 'emailjs-com';
 
-export default async function handler(req, res) {
-  // Solo permitir método POST
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
+export async function POST(request) {
   try {
-    const { name, phone, email, company, subject, message } = req.body;
+    const { name, phone, email, company, subject, message } = await request.json();
 
     // Validar campos requeridos
     if (!name || !phone || !email || !subject || !message) {
-      return res.status(400).json({ 
+      return Response.json({ 
         error: 'Missing required fields',
         required: ['name', 'phone', 'email', 'subject', 'message']
-      });
+      }, { status: 400 });
     }
 
     // Validar formato de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return res.status(400).json({ error: 'Invalid email format' });
+      return Response.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
     // Configurar EmailJS con variables de entorno
@@ -31,7 +26,7 @@ export default async function handler(req, res) {
     // Verificar que las credenciales estén configuradas
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       console.error('EmailJS credentials not configured');
-      return res.status(500).json({ error: 'Email service not configured' });
+      return Response.json({ error: 'Email service not configured' }, { status: 500 });
     }
 
     // Preparar los datos del template
@@ -55,7 +50,7 @@ export default async function handler(req, res) {
       timestamp: new Date().toISOString()
     });
 
-    return res.status(200).json({ 
+    return Response.json({ 
       success: true, 
       message: 'Email sent successfully',
       id: result.text // ID de la transacción de EmailJS
@@ -66,15 +61,15 @@ export default async function handler(req, res) {
     
     // Manejar errores específicos de EmailJS
     if (error.text) {
-      return res.status(400).json({ 
+      return Response.json({ 
         error: 'Failed to send email',
         details: error.text
-      });
+      }, { status: 400 });
     }
 
-    return res.status(500).json({ 
+    return Response.json({ 
       error: 'Internal server error',
       message: 'Failed to send email'
-    });
+    }, { status: 500 });
   }
 } 

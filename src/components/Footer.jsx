@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 import { useLanguage } from '../context/LangContext';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa6';
 import '../App.css';
@@ -38,7 +40,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container redesigned-footer">
         <div className="footer-logo-box">
-          <img src={process.env.PUBLIC_URL + '/icons/Crystal_g_iso.svg'} alt="Crystal Service Logo" className="footer-logo" />
+          <img src="/icons/Crystal_g_iso.svg" alt="Crystal Service Logo" className="footer-logo" />
         </div>
         <div className="footer-info-box">
           <div className="footer-section">
@@ -73,9 +75,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>{t('footer.moreInfo')}</h4>
             <ul>
-              <li><Link to="/privacidad" className="footer-link">{t('footer.privacyPolicy')}</Link></li>
-              <li><Link to="/terminos" className="footer-link">{t('footer.termsConditions')}</Link></li>
-              <li><Link to="/cookies" className="footer-link">{t('footer.cookiesPolicy')}</Link></li>
+              <li><Link href="/privacidad" className="footer-link">{t('footer.privacyPolicy')}</Link></li>
+              <li><Link href="/terminos" className="footer-link">{t('footer.termsConditions')}</Link></li>
+              <li><Link href="/cookies" className="footer-link">{t('footer.cookiesPolicy')}</Link></li>
             </ul>
           </div>
         </div>

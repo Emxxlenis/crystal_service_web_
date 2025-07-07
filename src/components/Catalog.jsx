@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 import { useLanguage } from '../context/LangContext';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import '../App.css';
 
 const PRODUCTS = [
@@ -106,7 +108,7 @@ const Catalog = () => {
       </div>
       {hasMore && (
         <div className="catalog-more-btn-box">
-          <Link to="/catalogo" className="catalog-more-btn">
+          <Link href="/catalogo" className="catalog-more-btn">
             {t('catalog.seeMore')}
           </Link>
         </div>

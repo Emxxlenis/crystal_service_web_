@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { useLanguage } from '../context/LangContext';
 import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';

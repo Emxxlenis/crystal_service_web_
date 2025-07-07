@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { useLanguage } from '../context/LangContext';
 import '../App.css';
@@ -19,7 +21,7 @@ const Projects = () => {
       <div className="clients-logos-grid">
         {CLIENT_LOGOS.map((logo, i) => (
           <div className="client-logo-box" key={i}>
-            <img src={process.env.PUBLIC_URL + '/icons/clients/' + logo} alt={`Cliente ${i + 1}`} className="client-logo-img" />
+            <img src={`/icons/clients/${logo}`} alt={`Cliente ${i + 1}`} className="client-logo-img" />
           </div>
         ))}
       </div>

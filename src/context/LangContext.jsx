@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
+'use client';
+
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import es from '../translations/es.json';
 import en from '../translations/en.json';
 
@@ -10,10 +12,14 @@ const translations = {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
+  const [language, setLanguage] = useState('es');
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
     const savedLang = localStorage.getItem('language');
-    return savedLang || 'es';
-  });
+    setLanguage(savedLang || 'es');
+    setMounted(true);
+  }, []);
 
   const t = (key) => {
     const keys = key.split('.');
@@ -33,7 +39,9 @@ export const LanguageProvider = ({ children }) => {
   const toggleLanguage = () => {
     const newLang = language === 'es' ? 'en' : 'es';
     setLanguage(newLang);
-    localStorage.setItem('language', newLang);
+    if (mounted) {
+      localStorage.setItem('language', newLang);
+    }
   };
 
   return (
