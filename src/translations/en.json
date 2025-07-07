@@ -13,10 +13,10 @@
     "toggleMenu": "Toggle menu"
   },
   "hero": {
-    "title": "Glass, Aluminum & Steel Solutions for Your Projects",
-    "subtitle": "Over 10 years of experience creating unique and functional spaces.",
+    "title": "Glass, Aluminum, and Stainless Steel Solutions in Panama",
+    "subtitle": "Over 40 commercial clients and dozens of residential customers trust Crystal Service JJ to transform their spaces with innovation, quality, and technology.",
     "whatsapp": "WhatsApp",
-    "trust": "Trust, quality, and personalized service in every project."
+    "trust": "Request your express quote. Installation throughout Panama."
   },
   "catalog": {
     "title": "Product Catalog",
@@ -30,6 +30,15 @@
       "mirror": "Mirror",
       "steel": "Steel"
     }
+  },
+  "product": {
+    "features": "Features",
+    "applications": "Applications",
+    "quoteWhatsapp": "Quote via WhatsApp",
+    "notFound": "Product not found"
+  },
+  "common": {
+    "back": "Back"
   },
   "products": {
     "title": "PRODUCTS",
@@ -73,35 +82,19 @@
     }
   },
   "services": {
-    "title": "SERVICES",
-    "description": "At Crystal Service JJ we offer a full range of services for your projects: 3D modeling, construction plans, rendering, consulting, and installation. Our team is committed to quality, personalized attention, and customer satisfaction at every stage of the process.",
-    "3d_modeling": {
-      "title": "3D MODELING",
-      "description": "We create accurate 3D models to visualize your projects before building."
-    },
-    "construction_plans": {
-      "title": "CONSTRUCTION PLANS",
-      "description": "We prepare detailed plans for the correct execution of your project."
-    },
-    "rendering": {
-      "title": "RENDERING",
-      "description": "Realistic images to present and sell your ideas."
-    },
-    "consulting": {
-      "title": "CONSULTING",
-      "description": "We guide you in every stage of your project for the best results."
-    },
-    "detail": {
-      "quote": "Request a quote",
-      "backToServices": "Back to services"
-    }
+    "title": "Specialized Services",
+    "description": "At Crystal Service JJ, we offer a complete portfolio of specialized services in tempered glass, bath partitions, aluminum windows and doors, stainless steel railings, modern facades, curtain walls, Smart Glass, automated doors, enclosures, maintenance, and professional cleaning. We carry out installations throughout Panama and guarantee quality workmanship, as well as providing express service for those who need it.",
+    "glass": "Tempered glass, mirrors, bath partitions, glass doors, Smart Glass, smoked film",
+    "aluminum": "Aluminum windows and doors, Louver system, European-style windows, sliding doors",
+    "steel": "Stainless steel railings and structures",
+    "special": "Modern facades, curtain walls, enclosures, automated doors, maintenance, and cleaning"
   },
   "about": {
     "title": "About Us",
-    "subtitle": "At Crystal Service JJ, we turn your ideas into innovative solutions in glass, aluminum, and stainless steel.",
+    "subtitle": "We are a Panamanian company specialized in tempered glass, aluminum, and stainless steel services. We have established ourselves in the national market thanks to the trust of over 40 commercial clients and a strong digital presence. We offer innovative and personalized solutions for residential and commercial projects throughout Panama.",
     "history": {
-      "title": "Our Story: Passion and dedication in every glass and metal project.",
-      "description": "At Crystal Service JJ, we pride ourselves on offering personalized solutions that combine aesthetics and functionality. Our core values are quality, innovation, and customer satisfaction, guiding every step of our work."
+      "title": "Our Value Proposition",
+      "description": "At Crystal Service JJ, we provide a comprehensive experience, supporting our clients from supply to complete installation, with nationwide coverage and guaranteed workmanship. We stand out for our technological innovation in solutions such as Smart Glass and automated systems, as well as for offering personalized attention and express service to meet the needs of every project."
     },
     "mission": {
       "title": "Mission",
@@ -113,10 +106,10 @@
     }
   },
   "contact": {
-    "title": "Discover everything we can do for you. Let's talk!",
+    "title": "Do you want to transform your space? Contact us and receive personalized attention from our team.",
     "form": {
       "name": "Name *",
-      "phone": "Phone Number *",
+      "phone": "Phone *",
       "email": "Email *",
       "company": "Company",
       "subject": "Subject *",
@@ -129,20 +122,22 @@
       "error": "There was an error sending the form.",
       "missingFields": "Please complete all required fields.",
       "invalidEmail": "Please enter a valid email address."
-    }
+    },
+    "info": "Phones: 6456-2658 / 6362-1210 | Email: crystalservicejj@gmail.com | Instagram: @crystalservicejjpty | Facebook: Crystal Service Jj | TikTok: @crystalservicejjpty | Location: Panama"
   },
   "projects": {
-    "title": "Our Clients"
+    "title": "Our Clients",
+    "description": "We have worked with over 40 commercial stores, restaurants, offices, hotels, and residences across Panama. We are proud to showcase the results and testimonials of those who have trusted us for their projects."
   },
   "footer": {
     "contact": "Contact",
     "offices": "Offices",
     "moreInfo": "More information",
     "privacyPolicy": "Privacy Policy",
-    "termsConditions": "Terms & Conditions",
+    "termsConditions": "Terms and conditions",
     "cookiesPolicy": "Cookies Policy",
-    "copyright": "All rights reserved.",
-    "address": "31 J68, SAN MIGUELITO, Panama"
+    "copyright": "Crystal Service JJ © 2024. Tempered glass, aluminum, and stainless steel in Panama. Over 40 satisfied commercial clients.",
+    "address": "Panama, nationwide coverage"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -291,5 +286,5 @@
       }
     }
   }
-  }
+}
   

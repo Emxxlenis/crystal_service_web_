@@ -13,10 +13,10 @@
     "toggleMenu": "Alternar menú"
   },
   "hero": {
-    "title": "Soluciones en vidrio, aluminio y acero para tus proyectos",
-    "subtitle": "Más de 10 años de experiencia creando espacios únicos y funcionales.",
+    "title": "Soluciones en Vidrio, Aluminio y Acero Inoxidable en Panamá",
+    "subtitle": "Más de 40 locales comerciales y decenas de clientes residenciales confían en Crystal Service JJ para transformar sus espacios con innovación, calidad y tecnología.",
     "whatsapp": "WhatsApp",
-    "trust": "Confianza, calidad y atención personalizada en cada proyecto."
+    "trust": "Solicita tu cotización express. Instalación en todo Panamá."
   },
   "catalog": {
     "title": "Catálogo de Productos",
@@ -30,6 +30,15 @@
       "mirror": "Espejo",
       "steel": "Acero"
     }
+  },
+  "product": {
+    "features": "Características",
+    "applications": "Aplicaciones",
+    "quoteWhatsapp": "Cotizar por WhatsApp",
+    "notFound": "Producto no encontrado"
+  },
+  "common": {
+    "back": "Volver"
   },
   "products": {
     "title": "PRODUCTOS",
@@ -73,35 +82,19 @@
     }
   },
   "services": {
-    "title": "SERVICIOS",
-    "description": "En Crystal Service JJ ofrecemos una gama completa de servicios para tus proyectos: modelado 3D, planos de construcción, renderizado, asesoría e instalación. Nuestro equipo está comprometido con la calidad, la atención personalizada y la satisfacción de nuestros clientes en cada etapa del proceso.",
-    "3d_modeling": {
-      "title": "MODELADO 3D",
-      "description": "Creamos modelos 3D precisos para visualizar tus proyectos antes de construirlos."
-    },
-    "construction_plans": {
-      "title": "PLANOS DE CONSTRUCCIÓN",
-      "description": "Elaboramos planos detallados para la correcta ejecución de tu obra."
-    },
-    "rendering": {
-      "title": "RENDERIZADO",
-      "description": "Imágenes realistas para presentar y vender tus ideas."
-    },
-    "consulting": {
-      "title": "ASESORÍA",
-      "description": "Te orientamos en cada etapa de tu proyecto para lograr los mejores resultados."
-    },
-    "detail": {
-      "quote": "Cotizar servicio",
-      "backToServices": "Volver a servicios"
-    }
+    "title": "Servicios Especializados",
+    "description": "En Crystal Service JJ ofrecemos un portafolio completo de servicios especializados en vidrio templado, divisiones de baño, ventanas y puertas de aluminio, barandas de acero inoxidable, fachadas modernas, muros cortina, Smart Glass, puertas automatizadas, cerramientos, mantenimiento y limpieza profesional. Realizamos la instalación en todo Panamá y garantizamos mano de obra de calidad, además de brindar servicio express para quienes lo requieran.",
+    "glass": "Vidrio templado, espejos, divisiones de baño, puertas de vidrio, Smart Glass, papel ahumado",
+    "aluminum": "Ventanas y puertas de aluminio, sistema Louver, ventanas tipo Europa, puertas corredizas",
+    "steel": "Barandas y estructuras en acero inoxidable",
+    "special": "Fachadas modernas, muros cortina, cerramientos, puertas automatizadas, mantenimiento y limpieza"
   },
   "about": {
     "title": "Quiénes Somos",
-    "subtitle": "En Crystal Service JJ, transformamos tus ideas en soluciones innovadoras en vidrio, aluminio y acero inoxidable.",
+    "subtitle": "Somos una empresa panameña especializada en servicios de vidrio templado, aluminio y acero inoxidable. Nos hemos consolidado en el mercado nacional gracias a la confianza de más de 40 clientes comerciales y una sólida presencia digital. Ofrecemos soluciones innovadoras y personalizadas para proyectos residenciales y comerciales en todo Panamá.",
     "history": {
-      "title": "Nuestra historia: Pasión y dedicación en cada proyecto de cristal y metal.",
-      "description": "En Crystal Service JJ, nos enorgullecemos de ofrecer soluciones personalizadas que combinan estética y funcionalidad. Nuestros valores fundamentales son la calidad, la innovación y la satisfacción del cliente, guiando cada paso de nuestro trabajo."
+      "title": "Nuestra Propuesta de Valor",
+      "description": "En Crystal Service JJ ofrecemos una experiencia integral, acompañando a nuestros clientes desde el suministro hasta la instalación completa, con cobertura nacional y mano de obra garantizada. Nos destacamos por nuestra innovación tecnológica en soluciones como Smart Glass y sistemas automatizados, así como por brindar atención personalizada y servicio express para satisfacer las necesidades de cada proyecto."
     },
     "mission": {
       "title": "Misión",
@@ -113,14 +106,14 @@
     }
   },
   "contact": {
-    "title": "Descubre todo lo que podemos hacer por ti. ¡Hablemos!",
+    "title": "¿Quieres transformar tu espacio? Contáctanos y recibe atención personalizada de nuestro equipo.",
     "form": {
       "name": "Nombre *",
-      "phone": "Número de Teléfono *",
+      "phone": "Teléfono *",
       "email": "Email *",
       "company": "Empresa",
       "subject": "Asunto *",
-      "message": "Consulta *",
+      "message": "Mensaje *",
       "submit": "Enviar",
       "sending": "Enviando..."
     },
@@ -129,10 +122,12 @@
       "error": "Hubo un error al enviar el formulario.",
       "missingFields": "Por favor, completa todos los campos requeridos.",
       "invalidEmail": "Por favor, ingresa un email válido."
-    }
+    },
+    "info": "Teléfonos: 6456-2658 / 6362-1210 | Email: crystalservicejj@gmail.com | Instagram: @crystalservicejjpty | Facebook: Crystal Service Jj | TikTok: @crystalservicejjpty | Ubicación: Panamá"
   },
   "projects": {
-    "title": "Nuestros Clientes"
+    "title": "Nuestros Clientes",
+    "description": "Hemos trabajado con más de 40 locales comerciales, restaurantes, oficinas, hoteles y residencias en todo Panamá. Nos enorgullece mostrar los resultados y testimonios de quienes han confiado en nosotros para sus proyectos."
   },
   "footer": {
     "contact": "Contacto",
@@ -141,8 +136,8 @@
     "privacyPolicy": "Política de privacidad",
     "termsConditions": "Términos y condiciones",
     "cookiesPolicy": "Política de cookies",
-    "copyright": "Todos los derechos reservados.",
-    "address": "31 J68, SAN MIGUELITO, Panama"
+    "copyright": "Crystal Service JJ © 2024. Vidrio templado, aluminio y acero inoxidable en Panamá. Más de 40 clientes comerciales satisfechos.",
+    "address": "Panamá, cobertura nacional"
   },
   "privacy": {
     "title": "Política de Privacidad",
@@ -291,5 +286,5 @@
       }
     }
   }
-  }
+}
   
