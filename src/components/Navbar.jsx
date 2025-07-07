@@ -19,7 +19,7 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // WhatsApp link (replace with your number)
+  // WhatsApp contact link
   const whatsappLink = 'https://wa.me/50764562658?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios.';
 
   return (

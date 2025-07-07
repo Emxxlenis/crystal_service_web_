@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LangContext';
 import { useRouter } from 'next/navigation';
 import '../App.css';
 
-// Datos extendidos de productos con información más detallada
+// Extended product data with detailed information
 const PRODUCT_DETAILS = {
   vidrio_templado: {
     name: {
@@ -1048,7 +1048,7 @@ const ProductDetail = ({ productSlug }) => {
   return (
     <section className="section product-detail-section">
       <div className="product-detail-container">
-        {/* Header con navegación */}
+        {/* Navigation header */}
         <div className="product-header">
           <button 
             onClick={() => router.back()} 
@@ -1058,9 +1058,9 @@ const ProductDetail = ({ productSlug }) => {
           </button>
         </div>
         
-        {/* Contenido principal */}
+        {/* Main content */}
         <div className="product-main-content">
-          {/* Imagen del producto */}
+          {/* Product image */}
           <div className="product-image-container">
             <img 
               src={product.img} 
@@ -1069,14 +1069,14 @@ const ProductDetail = ({ productSlug }) => {
             />
           </div>
           
-          {/* Información del producto */}
+          {/* Product information */}
           <div className="product-info-container">
             <h1 className="product-detail-title">{product.name[language]}</h1>
             <p className="product-detail-desc">{product.longDesc[language]}</p>
           </div>
         </div>
         
-        {/* Secciones de características y aplicaciones */}
+        {/* Features and applications sections */}
         <div className="product-sections">
           <div className="product-features">
             <h3>{t('product.features')}</h3>
@@ -1097,7 +1097,7 @@ const ProductDetail = ({ productSlug }) => {
           </div>
         </div>
         
-        {/* Botón de WhatsApp */}
+        {/* WhatsApp button */}
         <div className="product-whatsapp-container">
                       <button 
               onClick={handleWhatsAppClick}

@@ -4,7 +4,7 @@ export async function POST(request) {
   try {
     const { name, phone, email, company, subject, message } = await request.json();
 
-    // Validar campos requeridos
+    // Validate required fields
     if (!name || !phone || !email || !subject || !message) {
       return Response.json({ 
         error: 'Missing required fields',
@@ -12,38 +12,38 @@ export async function POST(request) {
       }, { status: 400 });
     }
 
-    // Validar formato de email
+    // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return Response.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    // Configurar EmailJS con variables de entorno
+    // Get EmailJS credentials from environment
     const SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
     const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
     const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
 
-    // Verificar que las credenciales estén configuradas
+    // Check if credentials are configured
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
       console.error('EmailJS credentials not configured');
       return Response.json({ error: 'Email service not configured' }, { status: 500 });
     }
 
-    // Preparar los datos del template
+    // Prepare template parameters
     const templateParams = {
       from_name: name,
       from_phone: phone,
       from_email: email,
-      from_company: company || 'No especificada',
+      from_company: company || 'Not specified',
       subject: subject,
       message: message,
       to_name: 'Crystal Service'
     };
 
-    // Enviar email usando EmailJS
+    // Send email using EmailJS
     const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
 
-    // Log del resultado (sin información sensible)
+    // Log success (without sensitive data)
     console.log('Email sent successfully:', {
       to: email,
       subject: subject,
@@ -59,7 +59,7 @@ export async function POST(request) {
   } catch (error) {
     console.error('Error sending email:', error);
     
-    // Manejar errores específicos de EmailJS
+    // Handle EmailJS specific errors
     if (error.text) {
       return Response.json({ 
         error: 'Failed to send email',

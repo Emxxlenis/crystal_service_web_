@@ -42,7 +42,7 @@ const ContactForm = () => {
         setSubmitted(true);
         setForm(initialState);
       } else {
-        // Manejar errores específicos de la API
+        // Handle specific API errors
         if (data.error === 'Missing required fields') {
           alert(t('contact.messages.missingFields'));
         } else if (data.error === 'Invalid email format') {

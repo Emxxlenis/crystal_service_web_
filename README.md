@@ -1,134 +1,111 @@
-# Crystal Service - Website
+# Crystal Service JJ - Website
 
-Sitio web profesional para Crystal Service JJ, empresa especializada en soluciones de vidrio, aluminio y acero.
+Sitio web corporativo desarrollado para Crystal Service JJ, empresa panameña especializada en soluciones de vidrio, aluminio y acero inoxidable.
 
-## 🚀 Características
+## Descripción del Proyecto
 
-- **Diseño Responsivo** - Optimizado para desktop y móvil
-- **Internacionalización** - Soporte completo para español e inglés
-- **Tema Claro/Oscuro** - Interfaz adaptable a preferencias del usuario
-- **Formulario de Contacto Seguro** - Backend API para envío de emails
-- **Páginas Legales** - Política de privacidad, términos y cookies
-- **Catálogo de Productos** - Con filtros y detalles
-- **SEO Optimizado** - Meta tags y estructura semántica
+Sitio web completo con funcionalidades empresariales que incluye:
+- **Diseño responsive** optimizado para todos los dispositivos
+- **Sistema bilingüe** (español/inglés) para alcance internacional
+- **Modo oscuro/claro** con persistencia de preferencias
+- **Formulario de contacto** integrado con sistema de email
+- **Catálogo de productos** con sistema de filtros
+- **Páginas legales** completas (privacidad, términos, cookies)
 
-## 🛠️ Tecnologías
+## Stack Tecnológico
 
-- **Frontend**: React 19, React Router, CSS3
-- **Backend**: Node.js API (Vercel Functions)
-- **Email**: EmailJS (backend seguro)
-- **Despliegue**: Vercel
-- **Internacionalización**: Sistema propio de traducciones
+- **Frontend**: React 19 + Next.js 14
+- **Styling**: CSS3 con diseño responsive
+- **Backend**: Vercel Functions (serverless)
+- **Email Service**: EmailJS integrado
+- **Deployment**: Vercel Platform
+- **Internacionalización**: Sistema custom de traducciones
 
-## 📦 Instalación Local
+## Setup del Proyecto
 
+Para desarrollo local:
 ```bash
-# Clonar el repositorio
-git clone <repository-url>
-cd crystal_service
-
-# Instalar dependencias
 npm install
-
-# Iniciar servidor de desarrollo
-npm start
+npm run dev
 ```
 
-## 🌐 Despliegue en Vercel
+El sitio está desplegado en Vercel con EmailJS configurado para el formulario de contacto.
 
-### 1. Preparación
-
-1. **Crear cuenta en Vercel**: [vercel.com](https://vercel.com)
-2. **Conectar repositorio**: Importar desde GitHub/GitLab
-3. **Configurar variables de entorno** (ver sección siguiente)
-
-### 2. Variables de Entorno
-
-En el dashboard de Vercel, configurar las siguientes variables:
-
-```env
-EMAILJS_SERVICE_ID=tu_service_id
-EMAILJS_TEMPLATE_ID=tu_template_id
-EMAILJS_PUBLIC_KEY=tu_public_key
-```
-
-### 3. Configuración de EmailJS
-
-1. **Crear cuenta en EmailJS**: [emailjs.com](https://emailjs.com)
-2. **Configurar servicio de email** (Gmail, Outlook, etc.)
-3. **Crear template de email** con las siguientes variables:
-   - `from_name` - Nombre del remitente
-   - `from_phone` - Teléfono del remitente
-   - `from_email` - Email del remitente
-   - `from_company` - Empresa del remitente
-   - `subject` - Asunto del mensaje
-   - `message` - Contenido del mensaje
-   - `to_name` - Nombre del destinatario
-
-### 4. Despliegue Automático
-
-Vercel detectará automáticamente la configuración y desplegará:
-- **Frontend**: React app en `/`
-- **Backend**: API en `/api/send-email`
-
-## 🔧 Estructura del Proyecto
+## Arquitectura del Proyecto
 
 ```
-crystal_service/
+crystal_service_web/
 ├── api/
-│   └── send-email.js          # Endpoint para envío de emails
-├── public/
-│   ├── icons/                 # Logos e iconos
-│   ├── products/              # Imágenes de productos
-│   └── index.html
+│   └── send-email.js          # API endpoint para emails
+├── app/                       # Next.js app router
+│   ├── layout.js
+│   ├── page.js
+│   └── productos/[slug]/
+├── public/                    # Assets estáticos
+│   ├── icons/
+│   └── products/
 ├── src/
 │   ├── components/            # Componentes React
 │   ├── context/               # Contextos (idioma, tema)
-│   ├── translations/          # Archivos de traducción
-│   └── App.js
-├── vercel.json               # Configuración de Vercel
-└── package.json
+│   ├── translations/          # Traducciones ES/EN
+│   └── utils/                 # Utilidades
+└── vercel.json               # Configuración de Vercel
 ```
 
-## 🌍 Sistema de Traducciones
+## Sistema de Internacionalización
 
-El sitio soporta español e inglés con un sistema de traducciones centralizado:
+Implementación custom de sistema de traducciones con:
+- Context API para gestión de estado
+- Persistencia en localStorage
+- Estructura jerárquica de claves
+- Validación automática en desarrollo
 
-- **Archivos**: `src/translations/es.json` y `src/translations/en.json`
-- **Uso**: `t('navigation.home')` en componentes
-- **Estructura**: Organizada por secciones (navigation, hero, contact, etc.)
+```jsx
+const { t } = useLanguage();
+return <h1>{t('navigation.home')}</h1>;
+```
 
-## 🔒 Seguridad
+## Características Destacadas
 
-- **Credenciales protegidas**: EmailJS configurado en backend
-- **Validación de datos**: Frontend y backend
-- **HTTPS**: Automático en Vercel
-- **CORS**: Configurado para dominio específico
+### Diseño y UX
+- **Mobile-first approach** con breakpoints optimizados
+- **Accesibilidad** con contraste y focus states
+- **Performance** optimizada con lazy loading
+- **SEO** con meta tags y estructura semántica
 
-## 📱 Responsive Design
+### Funcionalidades Técnicas
+- **Formulario de contacto** con validación completa
+- **Catálogo dinámico** con páginas de producto individuales
+- **Sistema de temas** con transiciones suaves
+- **Navegación** con rutas dinámicas
 
-- **Mobile First**: Diseño optimizado para móviles
-- **Breakpoints**: 600px, 768px, 1024px
-- **Touch Friendly**: Botones y enlaces optimizados
-- **Performance**: Imágenes optimizadas y lazy loading
+### Seguridad y Mantenimiento
+- **Validación de datos** en frontend y backend
+- **HTTPS** automático en producción
+- **CORS** configurado apropiadamente
+- **Error handling** robusto
 
-## 🎨 Temas
+## Documentación Técnica
 
-- **Claro**: Fondo blanco, texto oscuro
-- **Oscuro**: Fondo oscuro, texto claro
-- **Persistencia**: Preferencia guardada en localStorage
-- **Accesibilidad**: Contraste y focus states
+- **Sistema de traducciones**: `docs/TRANSLATION_SYSTEM.md`
+- **Validación de traducciones**: `npm run validate-translations`
+- **Componentes**: Organizados por funcionalidad
+- **Estilos**: CSS modular en `App.css`
 
-## 📞 Contacto
+## Información de Contacto
 
-Para soporte técnico o consultas sobre el proyecto:
+Para consultas técnicas o soporte:
 - **Email**: crystalservicejj@gmail.com
 - **WhatsApp**: +507 6456-2658
 
-## 📄 Licencia
+## Estado del Proyecto
 
-Este proyecto es privado y propiedad de Crystal Service JJ.
+✅ **Completado y en producción**
+- Desarrollo: 2-3 semanas
+- Cliente satisfecho con entregables
+- Sitio funcionando en producción
+- Documentación técnica completa
 
 ---
 
-**Desarrollado con ❤️ para Crystal Service JJ**
+*Desarrollado para Crystal Service JJ - Panamá*
