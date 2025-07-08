@@ -11,7 +11,10 @@ const translations = {
   en
 };
 
-// Validate translation file structure consistency
+// Language context for managing internationalization (i18n) across the app.
+// Provides translation utilities, language switching, and validation for translation files.
+
+// Validate translation file structure consistency (dev only)
 const validateTranslations = () => {
   const esKeys = Object.keys(es);
   const enKeys = Object.keys(en);
@@ -19,8 +22,7 @@ const validateTranslations = () => {
   if (esKeys.length !== enKeys.length) {
     console.warn('Translation files have different number of keys');
   }
-  
-  // Check for missing English translations
+  // Warn if any English translation is missing
   esKeys.forEach(key => {
     if (!enKeys.includes(key)) {
       console.warn(`Missing English translation for key: ${key}`);
@@ -38,18 +40,19 @@ export const LanguageProvider = ({ children }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Detect browser language as fallback
+    // Detect browser language as fallback and persist user preference
     const browserLang = navigator.language?.startsWith('en') ? 'en' : 'es';
     const savedLang = localStorage.getItem('language');
     setLanguage(savedLang || browserLang);
     setMounted(true);
   }, []);
 
+  // Translation function with support for nested keys and variable interpolation
   const t = (key, variables = {}) => {
     const keys = key.split('.');
     let value = translations[language];
     
-    // Navigate nested structure
+    // Traverse nested translation structure
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
@@ -58,20 +61,19 @@ export const LanguageProvider = ({ children }) => {
         if (process.env.NODE_ENV === 'development') {
           console.warn(`Translation key not found: ${key} for language: ${language}`);
         }
-        return key; // Return the key if not found
+        return key; // Fallback to key if not found
       }
     }
-    
-    // Handle variable interpolation for string values
+    // Interpolate variables if present
     if (typeof value === 'string' && Object.keys(variables).length > 0) {
       return Object.keys(variables).reduce((str, varKey) => {
         return str.replace(new RegExp(`{{${varKey}}}`, 'g'), variables[varKey]);
       }, value);
     }
-    
     return value || key;
   };
 
+  // Toggle between supported languages
   const toggleLanguage = () => {
     const newLang = language === 'es' ? 'en' : 'es';
     setLanguage(newLang);
@@ -80,6 +82,7 @@ export const LanguageProvider = ({ children }) => {
     }
   };
 
+  // Set language explicitly (with validation)
   const setLanguageExplicit = (lang) => {
     if (translations[lang]) {
       setLanguage(lang);
@@ -105,6 +108,7 @@ export const LanguageProvider = ({ children }) => {
   );
 };
 
+// Custom hook to access language context
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {
@@ -113,7 +117,7 @@ export const useLanguage = () => {
   return context;
 };
 
-// Additional hook for development debugging
+// Additional hook for translation debugging in development
 export const useTranslationDebug = () => {
   const { language, t } = useLanguage();
   

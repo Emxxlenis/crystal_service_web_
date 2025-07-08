@@ -52,8 +52,55 @@ const SERVICES = [
       es: 'Te orientamos en cada etapa de tu proyecto para lograr los mejores resultados.',
       en: 'We guide you in every stage of your project for the best results.'
     }
+  },
+  {
+    key: 'puertas_ducha',
+    img: '/products/fondo_home.jpg',
+    title: {
+      es: 'PUERTAS DE DUCHA',
+      en: 'SHOWER DOORS'
+    },
+    description: {
+      es: 'Puertas de ducha de vidrio templado con diseño elegante y seguro.',
+      en: 'Elegant and safe tempered glass shower doors.'
+    }
+  },
+  {
+    key: 'puertas_ventanas',
+    img: '/products/fondo_home.jpg',
+    title: {
+      es: 'PUERTAS Y VENTANAS',
+      en: 'DOORS AND WINDOWS'
+    },
+    description: {
+      es: 'Soluciones modernas en aluminio para puertas y ventanas residenciales y comerciales.',
+      en: 'Modern aluminum solutions for residential and commercial doors and windows.'
+    }
+  },
+  {
+    key: 'divisiones_oficinas',
+    img: '/products/fondo_home.jpg',
+    title: {
+      es: 'DIVISIONES DE OFICINAS',
+      en: 'OFFICE PARTITIONS'
+    },
+    description: {
+      es: 'Divisiones de oficinas en vidrio y aluminio para ambientes modernos.',
+      en: 'Glass and aluminum office partitions for modern environments.'
+    }
+  },
+  {
+    key: 'barandas_acero_vidrio',
+    img: '/products/fondo_home.jpg',
+    title: {
+      es: 'BARANDAS DE ACERO Y VIDRIO',
+      en: 'STEEL AND GLASS RAILINGS'
+    },
+    description: {
+      es: 'Barandas de acero inoxidable y vidrio para interiores y exteriores.',
+      en: 'Stainless steel and glass railings for indoor and outdoor use.'
+    }
   }
-  
 ];
 
 const Services = () => {

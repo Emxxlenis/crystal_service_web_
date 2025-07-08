@@ -25,10 +25,10 @@
     "quoteWhatsapp": "Quote via WhatsApp",
     "filters": {
       "all": "All",
-      "aluminum": "Aluminum",
-      "glass": "Glass",
-      "mirror": "Mirror",
-      "steel": "Steel"
+      "ducha": "Shower Doors",
+      "puertas_ventanas": "Doors and Windows",
+      "barandas": "Steel and Glass Railings",
+      "especial": "Special Services"
     }
   },
   "product": {
@@ -42,37 +42,149 @@
   },
   "products": {
     "title": "PRODUCTS",
-    "aluminum_windows": {
-      "name": "ALUMINUM DOORS AND WINDOWS",
-      "description": "Modern aluminum solutions for doors and windows.",
-      "color": "Silver, White, Black",
-      "type": "Sliding, Hinged"
+    "sistema_eolo": {
+      "name": "EOLO SYSTEM",
+      "description": "Shower door with fixed panel and sliding door. L-type bathroom system or with bathtub.",
+      "color": "Clear, Frosted",
+      "type": "Sliding, Fixed"
     },
-    "bath_doors": {
-      "name": "BATH DOORS",
-      "description": "Elegant tempered glass bath doors.",
+    "modelo_cy": {
+      "name": "CY MODEL",
+      "description": "2 sliding doors, 6mm tempered glass, double towel holder.",
+      "color": "Clear",
+      "type": "Sliding"
+    },
+    "modelo_aqua_black": {
+      "name": "AQUA BLACK MODEL",
+      "description": "Fixed panel and 1 sliding door, 6mm tempered glass.",
+      "color": "Clear, Frosted",
+      "type": "Sliding, Fixed"
+    },
+    "puerta_abatible": {
+      "name": "HINGED DOOR",
+      "description": "Fixed panel and doors. 10mm tempered glass. Variety in handles and hardware.",
+      "color": "Clear, Frosted",
+      "type": "Hinged, Fixed"
+    },
+    "puertas_ducha_medida": {
+      "name": "CUSTOM SHOWER DOORS",
+      "description": "Sliding, Hinged, Tempered glass, great variety in hardware to choose and customize your bathrooms.",
       "color": "Clear, Frosted",
       "type": "Sliding, Hinged"
     },
-    "louvers": {
-      "name": "ALUMINUM LOUVERS",
-      "description": "Aluminum louvers for ventilation and design.",
-      "color": "Silver, White, Black",
-      "type": "Fixed, Movable"
+    "ventanas_aluminio": {
+      "name": "ALUMINUM WINDOWS",
+      "description": "European and French-style windows with design and price variety. Raw, thermo-acoustic and insulated glass. Natural, white, black and wood tones. Clear, reflective, dark and gray glass.",
+      "color": "Natural, White, Black, Wood",
+      "type": "European, French, Thermo-acoustic"
     },
-    "mirrors": {
+    "puertas_aluminio": {
+      "name": "ALUMINUM DOORS",
+      "description": "Sliding, hinged and anti-noise doors. Folding door and multi-panel sliding doors. Business doors with automatic closer. Variety in aluminum and glass tones.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Sliding, Hinged, Anti-noise"
+    },
+    "puerta_corrediza_europa": {
+      "name": "EUROPEAN-STYLE SLIDING DOOR",
+      "description": "Great variety in aluminum tones and clear and reflective glass. High-quality insulated glass. Exclusive designs with guaranteed trust and durability.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Sliding, European, Insulated"
+    },
+    "puertas_automaticas": {
+      "name": "AUTOMATIC DOORS",
+      "description": "Give your customers the best service with high-quality automatic doors. Variety in opening with 1 door or 2 doors. Guaranteed quality and trust.",
+      "color": "Aluminum, Glass",
+      "type": "Automatic, 1-2 doors"
+    },
+    "ventanas_europa_corredizas": {
+      "name": "EUROPEAN-STYLE SLIDING WINDOWS",
+      "description": "Great variety of colors in aluminum and glass with multiple opening options. Quality and trust in every installation. Modern and functional designs.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Sliding, European, Multiple openings"
+    },
+    "puertas_plegables": {
+      "name": "FOLDING DOORS",
+      "description": "Custom folding doors with variety in aluminum tones and clear and reflective glass. Give amplitude to your spaces with versatile opening systems.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Folding, Custom, Versatile"
+    },
+    "puerta_tipo_francesa": {
+      "name": "FRENCH-STYLE DOOR",
+      "description": "Exclusive designs with variety in aluminum tones and clear and reflective glass. French elegance combined with modern technology and durability.",
+      "color": "Natural, White, Black, Wood",
+      "type": "French, Exclusive, Elegant"
+    },
+    "puerta_vidrio_templado": {
+      "name": "TEMPERED GLASS DOOR",
+      "description": "Hinged or sliding tempered glass doors with complete hardware. Great variety of hardware in design and colors. Floor or center locks.",
+      "color": "Clear, Frosted",
+      "type": "Tempered, Hinged, Sliding"
+    },
+    "espejos": {
       "name": "MIRRORS",
-      "description": "Custom mirrors for any space.",
-      "color": "Silver",
-      "type": ""
+      "description": "Custom mirrors with beveled edges, decorative platinum, edge and bright edge finishes. Smoked, natural and bronze tones. With LED lighting, mosaic style, complete and sectioned.",
+      "color": "Smoked, Natural, Bronze",
+      "type": "Beveled, LED, Mosaic"
     },
-    "glass_railings": {
-      "name": "Glass Railings",
-      "description": "Tempered glass railings for indoor and outdoor use."
+    "divisiones_oficinas": {
+      "name": "OFFICE PARTITIONS",
+      "description": "Tempered glass, aluminum and glass, custom with jumbo glass. Variety in aluminum and glass tones, hardware included. Optional frosted paper with design or complete coverage.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Tempered, Jumbo, Frosted"
     },
-    "steel_doors": {
-      "name": "Stainless Steel Doors",
-      "description": "Stainless steel doors for maximum security and durability."
+    "mallas_mosquiteras_plisadas": {
+      "name": "PLEATED MOSQUITO NETS",
+      "description": "Variety in opening with quality and elegance. Great variety in aluminum tones. Practical and aesthetic solution for insect control in any space.",
+      "color": "Natural, White, Black",
+      "type": "Pleated, Variety Opening"
+    },
+    "disenos_aluminio": {
+      "name": "ALUMINUM DESIGNS",
+      "description": "Great variety of aluminum colors for offices, home or business. Elegance for your spaces with customized solutions that combine functionality and design.",
+      "color": "Great Variety of Colors",
+      "type": "Offices, Home, Business"
+    },
+    "sistema_louver": {
+      "name": "LOUVER SYSTEM",
+      "description": "Louver system enclosures for greater ventilation. Sliding or hinged doors and windows with great variety in aluminum tones. Efficient air flow control.",
+      "color": "Natural, White, Black, Wood",
+      "type": "Ventilation, Sliding, Hinged"
+    },
+    "barandas_acero": {
+      "name": "STAINLESS STEEL RAILINGS",
+      "description": "Stainless steel railings for indoor and outdoor use.",
+      "color": "Stainless Steel",
+      "type": "Indoor, Outdoor"
+    },
+    "vidrio_templado": {
+      "name": "TEMPERED GLASS",
+      "description": "High-resistance tempered glass for residential and commercial projects.",
+      "color": "Clear",
+      "type": "Tempered, Laminated"
+    },
+    "puertas_automatizadas": {
+      "name": "AUTOMATED DOORS",
+      "description": "High-flow, fast and silent automated doors.",
+      "color": "Aluminum, Glass",
+      "type": "Sliding, Revolving"
+    },
+    "barandas_acero_inoxidable": {
+      "name": "STAINLESS STEEL RAILINGS",
+      "description": "Stainless steel railings with options for rods, rope, steel + glass and pure stainless steel. Versatile solutions for indoor and outdoor use with maximum durability.",
+      "color": "Stainless Steel, Gold, Black",
+      "type": "Rods, Rope, Steel + Glass"
+    },
+    "barandas_vidrio_templado": {
+      "name": "TEMPERED GLASS RAILINGS",
+      "description": "Exclusive tempered glass railings with different gauges and tones. Exclusive colors like gold and black. Elegance for homes, commercial stores and offices.",
+      "color": "Clear, Gold, Black",
+      "type": "Tempered, Different Gauges"
+    },
+    "baranda_acero_vidrio": {
+      "name": "STAINLESS STEEL AND TEMPERED GLASS RAILING",
+      "description": "Stainless steel only, tempered glass only with supports, or combination of both. Pool handrails, wall-mounted, bathroom and much more. Maximum versatility.",
+      "color": "Stainless Steel, Glass, Mixed",
+      "type": "Pool, Wall, Bathroom, Versatile"
     },
     "detail": {
       "color": "Color",
@@ -83,11 +195,16 @@
   },
   "services": {
     "title": "Specialized Services",
-    "description": "At Crystal Service JJ, we offer a complete portfolio of specialized services in tempered glass, bath partitions, aluminum windows and doors, stainless steel railings, modern facades, curtain walls, Smart Glass, automated doors, enclosures, maintenance, and professional cleaning. We carry out installations throughout Panama and guarantee quality workmanship, as well as providing express service for those who need it.",
-    "glass": "Tempered glass, mirrors, bath partitions, glass doors, Smart Glass, smoked film",
-    "aluminum": "Aluminum windows and doors, Louver system, European-style windows, sliding doors",
-    "steel": "Stainless steel railings and structures",
-    "special": "Modern facades, curtain walls, enclosures, automated doors, maintenance, and cleaning"
+    "description": "At Crystal Service JJ, we offer a complete portfolio of specialized services in shower doors, doors and windows, office partitions, stainless steel and glass railings, modern facades, curtain walls, Smart Glass, automated doors, enclosures, maintenance, and professional cleaning. We carry out installations throughout Panama and guarantee quality workmanship, as well as providing express service for those who need it.",
+    "ducha": "Shower doors, bath partitions, tempered glass doors",
+    "puertas_ventanas": "Aluminum windows and doors, Louver system, European-style windows, sliding and automated doors",
+    "divisiones": "Office partitions, enclosures, curtain walls, modern facades",
+    "barandas": "Stainless steel railings and structures, tempered glass, mirrors, Smart Glass",
+    "special": "Maintenance, professional cleaning and specialized services",
+    "detail": {
+      "quote": "Quote service",
+      "backToServices": "Back to services"
+    }
   },
   "about": {
     "title": "About Us",

@@ -1,11 +1,9 @@
-// Utilidades para el sistema de traducción
+// Utility functions for the translation (i18n) system.
+// Includes helpers for formatting, validation, and key management.
 
 /**
- * Formatea números según el idioma
- * @param {number} number - Número a formatear
- * @param {string} language - Idioma ('es' | 'en')
- * @param {Object} options - Opciones de formateo
- * @returns {string} Número formateado
+ * Formats a number according to the selected language.
+ * Uses Intl.NumberFormat for locale-aware formatting.
  */
 export const formatNumber = (number, language = 'es', options = {}) => {
   const defaultOptions = {
@@ -19,11 +17,8 @@ export const formatNumber = (number, language = 'es', options = {}) => {
 };
 
 /**
- * Formatea fechas según el idioma
- * @param {Date|string} date - Fecha a formatear
- * @param {string} language - Idioma ('es' | 'en')
- * @param {Object} options - Opciones de formateo
- * @returns {string} Fecha formateada
+ * Formats a date according to the selected language.
+ * Uses Intl.DateTimeFormat for locale-aware formatting.
  */
 export const formatDate = (date, language = 'es', options = {}) => {
   const dateObj = typeof date === 'string' ? new Date(date) : date;
@@ -40,11 +35,7 @@ export const formatDate = (date, language = 'es', options = {}) => {
 };
 
 /**
- * Formatea moneda según el idioma
- * @param {number} amount - Cantidad a formatear
- * @param {string} language - Idioma ('es' | 'en')
- * @param {string} currency - Código de moneda (default: 'USD')
- * @returns {string} Moneda formateada
+ * Formats a currency value according to the selected language and currency code.
  */
 export const formatCurrency = (amount, language = 'es', currency = 'USD') => {
   return new Intl.NumberFormat(language === 'es' ? 'es-PA' : 'en-US', {
@@ -54,10 +45,8 @@ export const formatCurrency = (amount, language = 'es', currency = 'USD') => {
 };
 
 /**
- * Validate that all translation keys exist in both languages
- * @param {Object} esTranslations - Spanish translations
- * @param {Object} enTranslations - English translations
- * @returns {Object} Validation result
+ * Validates that all translation keys exist in both language files.
+ * Returns a report of missing or extra keys.
  */
 export const validateTranslationKeys = (esTranslations, enTranslations) => {
   const errors = [];
@@ -96,10 +85,7 @@ export const validateTranslationKeys = (esTranslations, enTranslations) => {
 };
 
 /**
- * Generate a report of missing translations
- * @param {Object} translations - Translations object
- * @param {string} language - Language to check
- * @returns {Array} List of missing keys
+ * Finds missing translations (empty strings) for a given language.
  */
 export const findMissingTranslations = (translations, language) => {
   const missing = [];
@@ -122,9 +108,7 @@ export const findMissingTranslations = (translations, language) => {
 };
 
 /**
- * Sanitize text for translation usage
- * @param {string} text - Text to sanitize
- * @returns {string} Sanitized text
+ * Sanitizes translation text for safe usage.
  */
 export const sanitizeTranslationText = (text) => {
   if (typeof text !== 'string') return text;
@@ -137,10 +121,7 @@ export const sanitizeTranslationText = (text) => {
 };
 
 /**
- * Check if a translation key exists
- * @param {Object} translations - Translations object
- * @param {string} key - Key to check (dot notation)
- * @returns {boolean} True if exists
+ * Checks if a translation key exists in the translations object (dot notation supported).
  */
 export const hasTranslationKey = (translations, key) => {
   const keys = key.split('.');

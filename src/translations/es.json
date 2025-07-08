@@ -25,10 +25,10 @@
     "quoteWhatsapp": "Cotizar por WhatsApp",
     "filters": {
       "all": "Todos",
-      "aluminum": "Aluminio",
-      "glass": "Vidrio",
-      "mirror": "Espejo",
-      "steel": "Acero"
+      "ducha": "Puertas de Ducha",
+      "puertas_ventanas": "Puertas y Ventanas",
+      "barandas": "Barandas de Acero y Vidrio",
+      "especial": "Servicios Especiales"
     }
   },
   "product": {
@@ -42,37 +42,149 @@
   },
   "products": {
     "title": "PRODUCTOS",
-    "aluminum_windows": {
-      "name": "PUERTAS Y VENTANAS DE ALUMINIO",
-      "description": "Soluciones modernas en aluminio para puertas y ventanas.",
-      "color": "Plata, Blanco, Negro",
-      "type": "Corredizas, Abatibles"
-    },
-    "bath_doors": {
-      "name": "PUERTAS DE BAÑO",
-      "description": "Puertas de baño de vidrio templado y diseño elegante.",
+    "sistema_eolo": {
+      "name": "SISTEMA EOLO",
+      "description": "Puerta de ducha con paño fijo y puerta corrediza. Sistema de baños tipo L o con bañera.",
       "color": "Transparente, Esmerilado",
-      "type": "Corredizas, Abatibles"
+      "type": "Corrediza, Fijo"
     },
-    "louvers": {
-      "name": "LOUVERS DE ALUMINIO",
-      "description": "Louvers de aluminio para ventilación y diseño.",
-      "color": "Plata, Blanco, Negro",
-      "type": "Fijos, Móviles"
+    "modelo_cy": {
+      "name": "MODELO CY",
+      "description": "2 puertas corredizas, vidrio templado 6 milímetros, tirador toallero doble.",
+      "color": "Transparente",
+      "type": "Corredizas"
     },
-    "mirrors": {
+    "modelo_aqua_black": {
+      "name": "MODELO AQUA BLACK",
+      "description": "Paño fijo y 1 puerta corrediza, vidrio templado de 6 milímetros.",
+      "color": "Transparente, Esmerilado",
+      "type": "Corrediza, Fijo"
+    },
+    "puerta_abatible": {
+      "name": "PUERTA ABATIBLE",
+      "description": "Paño fijo y puertas. Vidrio templado de 10 milímetros. Variedad en tiradores y herrajes.",
+      "color": "Transparente, Esmerilado",
+      "type": "Abatible, Fijo"
+    },
+    "puertas_ducha_medida": {
+      "name": "PUERTAS DE DUCHA A LA MEDIDA",
+      "description": "Corrediza, Abatible, Vidrio templado, gran variedad en herrajes para elegir y personalizar tus baños.",
+      "color": "Transparente, Esmerilado",
+      "type": "Corrediza, Abatible"
+    },
+    "ventanas_aluminio": {
+      "name": "VENTANAS EN ALUMINIO",
+      "description": "Ventanas tipo Europa y francesa con variedad en diseño y precios. Vidrio crudo, termo acústico e insulado. Tonos natural, blanco, negro y maderado. Vidrios claro, reflectivo, oscuro y gris.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Europa, Francesa, Termo acústico"
+    },
+    "puertas_aluminio": {
+      "name": "PUERTAS EN ALUMINIO",
+      "description": "Puertas corredizas, abatibles y anti-ruido. Puerta plegable y de varios paños corredizos. Puertas para negocios con cierra automático. Variedad en tonos de aluminio y vidrio.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Corredizas, Abatibles, Anti-ruido"
+    },
+    "puerta_corrediza_europa": {
+      "name": "PUERTA CORREDIZA TIPO EUROPA",
+      "description": "Gran variedad en tonos de aluminio y vidrios claros y reflectivos. Vidrios insulados de alta calidad. Diseños exclusivos con garantía de confianza y durabilidad.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Corrediza, Europa, Insulada"
+    },
+    "puertas_automaticas": {
+      "name": "PUERTAS AUTOMÁTICAS",
+      "description": "Dale el mejor servicio a tus clientes con puertas automáticas de alta calidad. Variedad en apertura de 1 puerta o 2 puertas. Calidad y confianza garantizadas.",
+      "color": "Aluminio, Vidrio",
+      "type": "Automática, 1-2 puertas"
+    },
+    "ventanas_europa_corredizas": {
+      "name": "VENTANAS TIPO EUROPA CORREDIZAS",
+      "description": "Gran variedad de colores en aluminio y vidrio con múltiples opciones de apertura. Calidad y confianza en cada instalación. Diseños modernos y funcionales.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Corredizas, Europa, Múltiples aperturas"
+    },
+    "puertas_plegables": {
+      "name": "PUERTAS PLEGABLES",
+      "description": "Plegables a la medida con variedad en tonos de aluminio y vidrios claros y reflectivos. Dale amplitud a tus espacios con sistemas de apertura versátiles.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Plegables, A medida, Versátiles"
+    },
+    "puerta_tipo_francesa": {
+      "name": "PUERTA TIPO FRANCESA",
+      "description": "Diseños exclusivos con variedad en tonos de aluminio y vidrios claros y reflectivos. Elegancia francesa combinada con tecnología moderna y durabilidad.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Francesa, Exclusiva, Elegante"
+    },
+    "puerta_vidrio_templado": {
+      "name": "PUERTA DE VIDRIO TEMPLADO",
+      "description": "Puertas en vidrio templado abatibles o corredizas con herrajes completos. Gran variedad de herrajes en diseño y colores. Cerraduras de piso o de centro.",
+      "color": "Transparente, Esmerilado",
+      "type": "Templado, Abatible, Corrediza"
+    },
+    "espejos": {
       "name": "ESPEJOS",
-      "description": "Espejos a medida para cualquier espacio.",
-      "color": "Plata",
-      "type": ""
+      "description": "Espejos a la medida con biselados, platinas decorativas, canteado y canteado brillantes. Tonalidades ahumado, natural y bronce. Con luz LED, estilo mosaico, completo y seccionado.",
+      "color": "Ahumado, Natural, Bronce",
+      "type": "Biselados, LED, Mosaico"
     },
-    "glass_railings": {
-      "name": "Barandales de Vidrio",
-      "description": "Barandales de vidrio templado para interiores y exteriores."
+    "divisiones_oficinas": {
+      "name": "DIVISIONES DE OFICINAS",
+      "description": "En vidrio templado, aluminio y vidrio, a la medida con vidrios jumbos. Variedad en tonos de aluminio y vidrio, herrajes incluidos. Papel esmerilado a diseño o completo opcional.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Templado, Jumbos, Esmerilado"
     },
-    "steel_doors": {
-      "name": "Puertas de Acero Inoxidable",
-      "description": "Puertas de acero inoxidable para máxima seguridad y durabilidad."
+    "mallas_mosquiteras_plisadas": {
+      "name": "MALLAS MOSQUITERAS PLISADAS",
+      "description": "Variedad en apertura con calidad y elegancia. Gran variedad en tonos de aluminio. Solución práctica y estética para control de insectos en cualquier espacio.",
+      "color": "Natural, Blanco, Negro",
+      "type": "Plisadas, Variedad Apertura"
+    },
+    "disenos_aluminio": {
+      "name": "DISEÑOS EN ALUMINIO",
+      "description": "Gran variedad de colores en aluminio para oficinas, hogar o negocio. Elegancia para tus espacios con soluciones personalizadas que combinan funcionalidad y diseño.",
+      "color": "Gran Variedad de Colores",
+      "type": "Oficinas, Hogar, Negocio"
+    },
+    "sistema_louver": {
+      "name": "SISTEMA LOUVER",
+      "description": "Cerramientos en sistema louver para mayor ventilación. Puertas y ventanas corredizas o abatibles con gran variedad en tonos de aluminio. Control de flujo de aire eficiente.",
+      "color": "Natural, Blanco, Negro, Maderado",
+      "type": "Ventilación, Corredizas, Abatibles"
+    },
+    "barandas_acero": {
+      "name": "BARANDAS DE ACERO INOXIDABLE",
+      "description": "Barandas de acero inoxidable para interiores y exteriores.",
+      "color": "Acero Inoxidable",
+      "type": "Interiores, Exteriores"
+    },
+    "vidrio_templado": {
+      "name": "VIDRIO TEMPLADO",
+      "description": "Vidrio templado de alta resistencia para proyectos residenciales y comerciales.",
+      "color": "Transparente",
+      "type": "Templado, Laminado"
+    },
+    "puertas_automatizadas": {
+      "name": "PUERTAS AUTOMATIZADAS",
+      "description": "Puertas automatizadas de alto flujo, rápidas y silenciosas.",
+      "color": "Aluminio, Vidrio",
+      "type": "Deslizantes, Giratorias"
+    },
+    "barandas_acero_inoxidable": {
+      "name": "BARANDAS EN ACERO INOXIDABLE",
+      "description": "Barandas en acero inoxidable con opciones de cabillas, cuerda, acero + vidrio y acero inoxidable puro. Soluciones versátiles para interiores y exteriores con máxima durabilidad.",
+      "color": "Acero Inoxidable, Dorado, Negro",
+      "type": "Cabillas, Cuerda, Acero + Vidrio"
+    },
+    "barandas_vidrio_templado": {
+      "name": "BARANDAS EN VIDRIO TEMPLADO",
+      "description": "Exclusivas barandas en vidrio templado con diferentes calibres y tonalidades. Colores exclusivos como dorado y negro. Elegancia para hogar, locales comerciales y oficinas.",
+      "color": "Transparente, Dorado, Negro",
+      "type": "Templado, Diferentes Calibres"
+    },
+    "baranda_acero_vidrio": {
+      "name": "BARANDA ACERO INOXIDABLE Y VIDRIO TEMPLADO",
+      "description": "Solo acero inoxidable, solo vidrio templado con soportes, o combinación de ambos. Pasamanos para piscina, en pared, para baño y mucho más. Máxima versatilidad.",
+      "color": "Acero Inoxidable, Vidrio, Mixto",
+      "type": "Piscina, Pared, Baño, Versátil"
     },
     "detail": {
       "color": "Color",
@@ -83,11 +195,16 @@
   },
   "services": {
     "title": "Servicios Especializados",
-    "description": "En Crystal Service JJ ofrecemos un portafolio completo de servicios especializados en vidrio templado, divisiones de baño, ventanas y puertas de aluminio, barandas de acero inoxidable, fachadas modernas, muros cortina, Smart Glass, puertas automatizadas, cerramientos, mantenimiento y limpieza profesional. Realizamos la instalación en todo Panamá y garantizamos mano de obra de calidad, además de brindar servicio express para quienes lo requieran.",
-    "glass": "Vidrio templado, espejos, divisiones de baño, puertas de vidrio, Smart Glass, papel ahumado",
-    "aluminum": "Ventanas y puertas de aluminio, sistema Louver, ventanas tipo Europa, puertas corredizas",
-    "steel": "Barandas y estructuras en acero inoxidable",
-    "special": "Fachadas modernas, muros cortina, cerramientos, puertas automatizadas, mantenimiento y limpieza"
+    "description": "En Crystal Service JJ ofrecemos un portafolio completo de servicios especializados en puertas de ducha, puertas y ventanas, divisiones de oficinas, barandas de acero inoxidable y vidrio, fachadas modernas, muros cortina, Smart Glass, puertas automatizadas, cerramientos, mantenimiento y limpieza profesional. Realizamos la instalación en todo Panamá y garantizamos mano de obra de calidad, además de brindar servicio express para quienes lo requieran.",
+    "ducha": "Puertas de ducha, divisiones de baño, puertas de vidrio templado",
+    "puertas_ventanas": "Ventanas y puertas de aluminio, sistema Louver, ventanas tipo Europa, puertas corredizas y automatizadas",
+    "divisiones": "Divisiones de oficinas, cerramientos, muros cortina, fachadas modernas",
+    "barandas": "Barandas y estructuras en acero inoxidable, vidrio templado, espejos, Smart Glass",
+    "special": "Mantenimiento, limpieza profesional y servicios especializados",
+    "detail": {
+      "quote": "Cotizar servicio",
+      "backToServices": "Volver a servicios"
+    }
   },
   "about": {
     "title": "Quiénes Somos",
