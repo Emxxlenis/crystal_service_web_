@@ -7,7 +7,6 @@ Sitio web corporativo para Crystal Service JJ, empresa panameña especializada e
 - **Diseño responsive** optimizado para todos los dispositivos
 - **Sistema bilingüe** (español/inglés) con persistencia
 - **Modo oscuro/claro** con transiciones suaves
-- **Formulario de contacto** integrado con EmailJS
 - **Catálogo de productos** con filtros dinámicos
 - **Páginas legales** completas (privacidad, términos, cookies)
 - **SEO optimizado** con meta tags y estructura semántica
@@ -16,7 +15,6 @@ Sitio web corporativo para Crystal Service JJ, empresa panameña especializada e
 
 - **Frontend**: React 19 + Next.js 14
 - **Styling**: CSS3 con variables CSS y diseño responsive
-- **Email**: EmailJS para formularios de contacto
 - **Imágenes**: Cloudinary para optimización
 - **Deployment**: Vercel Platform
 
