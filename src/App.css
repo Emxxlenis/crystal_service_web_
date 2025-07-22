@@ -1231,13 +1231,17 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 320px;
+  min-height: 500px;
+  max-height: 500px;
   transition: box-shadow 0.2s, transform 0.2s;
   max-width: 340px;
   width: 100%;
   opacity: 0;
   animation: fadeInUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation-delay: 0.1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .catalog-card:hover {
   box-shadow: 0 6px 24px rgba(60,60,60,0.13);
@@ -3066,4 +3070,29 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.footer-office-address {
+  white-space: normal;
+  display: inline;
+}
+@media (max-width: 600px) {
+  .footer-office-address {
+    display: inline-block;
+    max-width: 220px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about2-section,
+  .about2-section * {
+    text-align: center !important;
+  }
+  .about2-section {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
 }

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa6';
 import '../App.css';
+import Image from 'next/image';
 
 const SOCIALS = [
   {
@@ -34,13 +35,25 @@ const CONTACTS = [
   }
 ];
 
+/**
+ * Footer component displays the footer section with contact and social links.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Footer = () => {
   const { t } = useLanguage();
   return (
     <footer className="footer">
       <div className="footer-container redesigned-footer">
         <div className="footer-logo-box">
-          <img src="/icons/Crystal_g_iso.svg" alt="Crystal Service Logo" className="footer-logo" />
+          <Image 
+            src="/icons/Crystal_g_iso.svg" 
+            alt="Crystal Service Logo" 
+            className="footer-logo" 
+            width={120} 
+            height={38} 
+            priority
+          />
         </div>
         <div className="footer-info-box">
           <div className="footer-section">
@@ -66,7 +79,7 @@ const Footer = () => {
             <h4>{t('footer.offices')}</h4>
             <ul>
               <li>
-                {t('footer.address')}
+                <span className="footer-office-address">San Miguelito las 500 #4142 planta baja. Ciudad de Panamá</span>
               </li>
             </ul>
           </div>
@@ -77,13 +90,12 @@ const Footer = () => {
             <ul>
               <li><Link href="/privacidad" className="footer-link">{t('footer.privacyPolicy')}</Link></li>
               <li><Link href="/terminos" className="footer-link">{t('footer.termsConditions')}</Link></li>
-              <li><Link href="/cookies" className="footer-link">{t('footer.cookiesPolicy')}</Link></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="footer-bottom redesigned-footer-bottom">
-        &copy; {new Date().getFullYear()} Crystal Service. {t('footer.copyright')}
+        Crystal Service JJ © 2025
       </div>
     </footer>
   );

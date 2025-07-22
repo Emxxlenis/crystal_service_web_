@@ -6,23 +6,11 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getProductMainImage, getCloudinaryDirectUrl } from '../utils/cloudinaryConfig';
 import '../App.css';
+import Image from 'next/image';
 
 const PRODUCTS = [
   {
-    key: 'puertas_ducha_medida',
-    img: '/products/fondo_home.jpg',
-    name: {
-      es: 'Puertas de Ducha a la Medida',
-      en: 'Custom Shower Doors'
-    },
-    desc: {
-      es: 'Servicio personalizado de puertas de ducha con opciones corredizas y abatibles. Vidrio templado de alta calidad y amplia variedad de herrajes para personalizar completamente tu espacio de baño.',
-      en: 'Custom shower door service with sliding and hinged options. High-quality tempered glass and wide variety of hardware to completely customize your bathroom space.'
-    }
-  },
-  {
     key: 'sistema_eolo',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Sistema Eolo',
       en: 'Eolo System'
@@ -34,7 +22,6 @@ const PRODUCTS = [
   },
   {
     key: 'modelo_cy',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Modelo CY',
       en: 'CY Model'
@@ -46,7 +33,6 @@ const PRODUCTS = [
   },
   {
     key: 'modelo_aqua_black',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Modelo Aqua Black',
       en: 'Aqua Black Model'
@@ -58,7 +44,6 @@ const PRODUCTS = [
   },
   {
     key: 'ventanas_aluminio',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas y Ventanas de Aluminio',
       en: 'Aluminum Doors and Windows'
@@ -70,7 +55,6 @@ const PRODUCTS = [
   },
   {
     key: 'barandas_acero_inoxidable',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Barandas de Acero Inoxidable y Vidrio',
       en: 'Stainless Steel and Glass Railings'
@@ -79,13 +63,36 @@ const PRODUCTS = [
       es: 'Soluciones completas en barandas: acero inoxidable con cabillas y cuerda, vidrio templado exclusivo, y combinaciones mixtas. Pasamanos para piscina, pared y baño.',
       en: 'Complete railing solutions: stainless steel with rods and rope, exclusive tempered glass, and mixed combinations. Pool, wall and bathroom handrails.'
     }
+  },
+  {
+    key: 'pergola',
+    name: {
+      es: 'Pérgolas y Estructuras',
+      en: 'Pergolas and Structures'
+    },
+    desc: {
+      es: 'Diseño y construcción de pérgolas personalizadas en aluminio y acero inoxidable. Estructuras para terrazas, jardines y espacios exteriores con acabados premium.',
+      en: 'Design and construction of custom pergolas in aluminum and stainless steel. Structures for terraces, gardens and outdoor spaces with premium finishes.'
+    }
+  },
+  {
+    key: 'smart_glass',
+    name: {
+      es: 'Smart Glass y Tecnología',
+      en: 'Smart Glass and Technology'
+    },
+    desc: {
+      es: 'Vidrio inteligente con control de privacidad, divisores automáticos y sistemas de control. Tecnología avanzada para espacios modernos y funcionales.',
+      en: 'Smart glass with privacy control, automatic partitions and control systems. Advanced technology for modern and functional spaces.'
+    }
   }
 ];
 
-// Catalog component displays a preview of featured products on the homepage.
-// It shows the first three products and a button to view the full catalog.
-// All text is internationalized using the useLanguage context.
-
+/**
+ * Catalog component displays a preview of featured products on the homepage.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Catalog = () => {
   const { language, t } = useLanguage();
   const router = useRouter();
@@ -104,13 +111,14 @@ const Catalog = () => {
             onClick={() => router.push(`/productos/${product.key}`)}
             style={{ cursor: 'pointer' }}
           >
-            <img 
+            <Image 
               src={getCloudinaryDirectUrl(getProductMainImage(product.key))} 
               alt={product.name[language]} 
-              className="catalog-img"
-              width={400}
-              height={300}
+              className="catalog-img" 
+              width={400} 
+              height={300} 
               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              priority
             />
             <div className="catalog-info">
               <h3>{product.name[language]}</h3>

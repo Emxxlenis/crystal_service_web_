@@ -4,7 +4,13 @@ import { useLanguage } from '../context/LangContext';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import '../styles/Navbar.css';
+import Image from 'next/image';
 
+/**
+ * Navbar component provides the main navigation bar for the application.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -27,7 +33,14 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <Link href="/" className="navbar-logo" aria-label="Inicio" onClick={closeMenu}>
-            <img src="/icons/Crystal_g_iso.svg" alt="Crystal Service Logo" style={{ height: '38px', verticalAlign: 'middle' }} />
+            <Image 
+              src="/icons/Crystal_g_iso.svg" 
+              alt="Crystal Service Logo" 
+              style={{ height: '38px', verticalAlign: 'middle' }} 
+              width={120} 
+              height={38} 
+              priority
+            />
           </Link>
         </div>
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>

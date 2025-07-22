@@ -3,6 +3,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LangContext';
 import '../App.css';
+import Image from 'next/image';
 
 const CLIENT_LOGOS = [
   'client_1.png',
@@ -10,9 +11,13 @@ const CLIENT_LOGOS = [
   'client_3.png',
   'client_4.png',
   'client_5.png',
-  'client_6.png',
 ];
 
+/**
+ * Projects component displays client logos in a grid.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Projects = () => {
   const { t } = useLanguage();
   return (
@@ -21,7 +26,14 @@ const Projects = () => {
       <div className="clients-logos-grid">
         {CLIENT_LOGOS.map((logo, i) => (
           <div className="client-logo-box" key={i}>
-            <img src={`/icons/clients/${logo}`} alt={`Cliente ${i + 1}`} className="client-logo-img" />
+            <Image 
+              src={`/icons/clients/${logo}`} 
+              alt={`Client ${i + 1}`} 
+              className="client-logo-img" 
+              width={120} 
+              height={60} 
+              style={{ objectFit: 'contain', width: '100%', height: '100%' }}
+            />
           </div>
         ))}
       </div>

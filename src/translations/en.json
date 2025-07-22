@@ -13,10 +13,10 @@
     "toggleMenu": "Toggle menu"
   },
   "hero": {
-    "title": "Glass, Aluminum, and Stainless Steel Solutions in Panama",
-    "subtitle": "Over 40 commercial clients and dozens of residential customers trust Crystal Service JJ to transform their spaces with innovation, quality, and technology.",
+    "title": "High-Quality Door Solutions in Panama",
+    "subtitle": "With 8 years of experience in the design, manufacturing, and commercialization of doors for residential, commercial, and industrial use. Products that combine security, modern design, and durability.",
     "whatsapp": "WhatsApp",
-    "trust": "Request your express quote. Installation throughout Panama."
+    "trust": "Request your quote. Professional installation throughout Panama."
   },
   "catalog": {
     "title": "Product Catalog",
@@ -194,13 +194,13 @@
     }
   },
   "services": {
-    "title": "Specialized Services",
-    "description": "At Crystal Service JJ, we offer a complete portfolio of specialized services in shower doors, doors and windows, office partitions, stainless steel and glass railings, modern facades, curtain walls, Smart Glass, automated doors, enclosures, maintenance, and professional cleaning. We carry out installations throughout Panama and guarantee quality workmanship, as well as providing express service for those who need it.",
+    "title": "Our Services",
+    "description": "Our commitment is to provide functional and aesthetic solutions that satisfy the client's needs, complying with high manufacturing standards and offering professional and personalized service.",
     "ducha": "Shower doors, bath partitions, tempered glass doors",
-    "puertas_ventanas": "Aluminum windows and doors, Louver system, European-style windows, sliding and automated doors",
+    "puertas_ventanas": "Solid and semi-solid wood doors, metal and security doors, interior and exterior doors, sliding and folding doors",
     "divisiones": "Office partitions, enclosures, curtain walls, modern facades",
     "barandas": "Stainless steel railings and structures, tempered glass, mirrors, Smart Glass",
-    "special": "Maintenance, professional cleaning and specialized services",
+    "special": "Personalized advice, professional installation, maintenance and professional cleaning",
     "detail": {
       "quote": "Quote service",
       "backToServices": "Back to services"
@@ -208,18 +208,18 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "We are a Panamanian company specialized in tempered glass, aluminum, and stainless steel services. We have established ourselves in the national market thanks to the trust of over 40 commercial clients and a strong digital presence. We offer innovative and personalized solutions for residential and commercial projects throughout Panama.",
+    "subtitle": "Panamanian company with 8 years of experience in doors and windows for residential, commercial, and industrial projects. We offer quality, security, and modern design tailored to Panama.",
     "history": {
-      "title": "Our Value Proposition",
-      "description": "At Crystal Service JJ, we provide a comprehensive experience, supporting our clients from supply to complete installation, with nationwide coverage and guaranteed workmanship. We stand out for our technological innovation in solutions such as Smart Glass and automated systems, as well as for offering personalized attention and express service to meet the needs of every project."
+      "title": "Trajectory",
+      "description": "8 years in the Panamanian market, establishing ourselves as a reference in high-quality doors. We focus on security, functionality, and design, using durable materials and modern technology."
     },
     "mission": {
       "title": "Mission",
-      "description": "To offer comprehensive solutions in glass, aluminum, and steel, exceeding our clients' expectations through quality, innovation, and service."
+      "description": "To manufacture and commercialize quality, secure, and aesthetic doors and windows, providing reliable solutions and customer service."
     },
     "vision": {
       "title": "Vision",
-      "description": "To be the leading company in the sector, recognized for excellence, trust, and customer satisfaction."
+      "description": "To be leaders in Panama in doors and windows, recognized for excellence, innovation, and personalized service."
     }
   },
   "contact": {
@@ -244,7 +244,7 @@
   },
   "projects": {
     "title": "Our Clients",
-    "description": "We have worked with over 40 commercial stores, restaurants, offices, hotels, and residences across Panama. We are proud to showcase the results and testimonials of those who have trusted us for their projects."
+    "description": "With a trajectory of 8 years in the Panamanian market, we have managed to earn the trust of residential, commercial, and institutional clients throughout the country. We are proud to showcase the results of those who have trusted us for their construction and remodeling projects."
   },
   "footer": {
     "contact": "Contact",
@@ -253,7 +253,6 @@
     "privacyPolicy": "Privacy Policy",
     "termsConditions": "Terms and conditions",
     "cookiesPolicy": "Cookies Policy",
-    "copyright": "Crystal Service JJ © 2024.",
     "address": "Panama, nationwide coverage"
   },
   "privacy": {

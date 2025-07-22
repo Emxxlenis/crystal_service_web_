@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { getCloudinaryDirectUrl } from '../utils/cloudinaryConfig';
+import Image from 'next/image';
 
 const allImages = [
   'barandas_acero1',
@@ -47,6 +48,11 @@ const allImages = [
   'ventana_europa1',
 ];
 
+/**
+ * CloudinaryAllImagesTest component displays all Cloudinary images for diagnostics.
+ * @component
+ * @returns {JSX.Element}
+ */
 const CloudinaryAllImagesTest = () => {
   return (
     <div style={{ padding: 24 }}>
@@ -57,7 +63,13 @@ const CloudinaryAllImagesTest = () => {
           return (
             <div key={img} style={{ width: 220, border: '1px solid #aaa', padding: 8, background: '#222', color: '#fff' }}>
               <div style={{ fontSize: 13, marginBottom: 6 }}>{img}.png</div>
-              <img src={url} alt={img} style={{ width: 200, height: 140, objectFit: 'cover', background: '#111' }} />
+              <Image 
+                src={url} 
+                alt={img} 
+                width={200} 
+                height={140} 
+                style={{ objectFit: 'cover', background: '#111' }}
+              />
               <div style={{ fontSize: 10, wordBreak: 'break-all', marginTop: 6 }}>{url}</div>
             </div>
           );

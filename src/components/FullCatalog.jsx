@@ -5,12 +5,12 @@ import { useLanguage } from '../context/LangContext';
 import { useRouter } from 'next/navigation';
 import { getProductMainImage, getCloudinaryDirectUrl } from '../utils/cloudinaryConfig';
 import '../App.css';
+import Image from 'next/image';
 
 const PRODUCTS = [
   // Puertas de Ducha
   {
     key: 'puertas_ducha_medida',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas de Ducha a la Medida',
       en: 'Custom Shower Doors'
@@ -23,7 +23,6 @@ const PRODUCTS = [
   },
   {
     key: 'sistema_eolo',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Sistema Eolo',
       en: 'Eolo System'
@@ -36,7 +35,6 @@ const PRODUCTS = [
   },
   {
     key: 'modelo_cy',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Modelo CY',
       en: 'CY Model'
@@ -49,7 +47,6 @@ const PRODUCTS = [
   },
   {
     key: 'modelo_aqua_black',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Modelo Aqua Black',
       en: 'Aqua Black Model'
@@ -62,21 +59,19 @@ const PRODUCTS = [
   },
   {
     key: 'puerta_abatible',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puerta Abatible',
       en: 'Hinged Door'
     },
     desc: {
-      es: 'Sistema de puerta abatible con paño fijo y vidrio templado de 10 milímetros. Amplia variedad de herrajes en acabados satinados, brillantes, negro y dorado. Disponible en configuración tipo L y modelo plegable.',
-      en: 'Hinged door system with fixed panel and 10mm tempered glass. Wide variety of hardware in satin, bright, black and gold finishes. Available in L-type configuration and folding model.'
+      es: 'Puerta de vidrio templado con bisagras y herrajes de alta calidad. Apertura suave y segura, ideal para baños y espacios modernos. Personalizable en acabados y medidas.',
+      en: 'Tempered glass door with high-quality hinges and hardware. Smooth and secure opening, ideal for bathrooms and modern spaces. Customizable in finishes and sizes.'
     },
     type: 'ducha'
   },
   // Puertas y Ventanas
   {
     key: 'ventanas_aluminio',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Ventanas en Aluminio',
       en: 'Aluminum Windows'
@@ -89,7 +84,6 @@ const PRODUCTS = [
   },
   {
     key: 'puertas_aluminio',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas en Aluminio',
       en: 'Aluminum Doors'
@@ -102,7 +96,6 @@ const PRODUCTS = [
   },
   {
     key: 'puerta_corrediza_europa',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puerta Corrediza Tipo Europa',
       en: 'European-Style Sliding Door'
@@ -115,7 +108,6 @@ const PRODUCTS = [
   },
   {
     key: 'puertas_automaticas',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puertas Automáticas',
       en: 'Automatic Doors'
@@ -128,7 +120,6 @@ const PRODUCTS = [
   },
   {
     key: 'ventanas_europa_corredizas',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Ventanas Tipo Europa Corredizas',
       en: 'European-Style Sliding Windows'
@@ -140,21 +131,7 @@ const PRODUCTS = [
     type: 'puertas_ventanas'
   },
   {
-    key: 'puertas_plegables',
-    img: '/products/fondo_home.jpg',
-    name: {
-      es: 'Puertas Plegables',
-      en: 'Folding Doors'
-    },
-    desc: {
-      es: 'Plegables a la medida con variedad en tonos de aluminio y vidrios claros y reflectivos. Dale amplitud a tus espacios con sistemas de apertura versátiles.',
-      en: 'Custom folding doors with variety in aluminum tones and clear and reflective glass. Give amplitude to your spaces with versatile opening systems.'
-    },
-    type: 'puertas_ventanas'
-  },
-  {
     key: 'puerta_tipo_francesa',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puerta Tipo Francesa',
       en: 'French-Style Door'
@@ -167,47 +144,67 @@ const PRODUCTS = [
   },
   {
     key: 'puerta_vidrio_templado',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Puerta de Vidrio Templado',
       en: 'Tempered Glass Door'
     },
     desc: {
-      es: 'Puertas en vidrio templado abatibles o corredizas con herrajes completos. Gran variedad de herrajes en diseño y colores. Cerraduras de piso o de centro.',
-      en: 'Hinged or sliding tempered glass doors with complete hardware. Great variety of hardware in design and colors. Floor or center locks.'
+      es: 'Vidrio templado de alta resistencia para proyectos residenciales y comerciales. Ideal para puertas, divisiones y fachadas. Seguridad, durabilidad y acabado elegante para cualquier espacio.',
+      en: 'High-resistance tempered glass for residential and commercial projects. Ideal for doors, partitions, and facades. Provides safety, durability, and an elegant finish for any space.'
     },
     type: 'puertas_ventanas'
   },
   // Barandas de Acero Inoxidable y Vidrio
   {
     key: 'barandas_acero_inoxidable',
-    img: '/products/fondo_home.jpg',
     name: {
-      es: 'Barandas en Acero Inoxidable',
+      es: 'Barandas de Acero Inoxidable',
       en: 'Stainless Steel Railings'
     },
     desc: {
-      es: 'Barandas en acero inoxidable con opciones de cabillas, cuerda, acero + vidrio y acero inoxidable puro. Soluciones versátiles para interiores y exteriores con máxima durabilidad.',
-      en: 'Stainless steel railings with options for rods, rope, steel + glass and pure stainless steel. Versatile solutions for indoor and outdoor use with maximum durability.'
+      es: 'Barandas de acero inoxidable para interiores y exteriores. Resistentes a la corrosión, fáciles de mantener y con diseño moderno. Ideales para escaleras, balcones y terrazas en hogares y comercios.',
+      en: 'Stainless steel railings for indoor and outdoor use. Corrosion-resistant, easy to maintain, and with a modern design. Ideal for stairs, balconies, and terraces in homes and businesses.'
     },
     type: 'barandas'
   },
   {
+    key: 'pergola',
+    name: {
+      es: 'Pérgolas y Estructuras',
+      en: 'Pergolas and Structures'
+    },
+    desc: {
+      es: 'Diseño y construcción de pérgolas personalizadas en aluminio y acero inoxidable. Estructuras para terrazas, jardines y espacios exteriores con acabados premium y resistencia climática.',
+      en: 'Design and construction of custom pergolas in aluminum and stainless steel. Structures for terraces, gardens and outdoor spaces with premium finishes and weather resistance.'
+    },
+    type: 'especial'
+  },
+  {
+    key: 'smart_glass',
+    name: {
+      es: 'Smart Glass (Papel Esmerilado)',
+      en: 'Smart Glass (Frosted Film)'
+    },
+    desc: {
+      es: 'Papel esmerilado decorativo para privacidad en oficinas, divisiones y vidrios. Solución estética y moderna para separar ambientes, controlar la visibilidad y mejorar la imagen de tus espacios. Instalación rápida y limpia.',
+      en: 'Decorative frosted film for privacy on offices, partitions, and glass. A modern and aesthetic solution to separate spaces, control visibility, and enhance the look of your environment. Fast and clean installation.'
+    },
+    type: 'especial'
+  },
+  {
     key: 'barandas_vidrio_templado',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Barandas en Vidrio Templado',
       en: 'Tempered Glass Railings'
     },
     desc: {
-      es: 'Exclusivas barandas en vidrio templado con diferentes calibres y tonalidades. Colores exclusivos como dorado y negro. Elegancia para hogar, locales comerciales y oficinas.',
-      en: 'Exclusive tempered glass railings with different gauges and tones. Exclusive colors like gold and black. Elegance for homes, commercial stores and offices.'
+      es: 'Exclusivas barandas en vidrio templado con diferentes calibres y tonalidades. Colores como dorado y negro. Elegancia y seguridad para hogares, comercios y oficinas, ideales para escaleras y balcones.',
+      en: 'Exclusive tempered glass railings with different gauges and tones, including gold and black. Elegance and safety for homes, businesses, and offices, ideal for stairs and balconies.'
     },
     type: 'barandas'
   },
   {
     key: 'baranda_acero_vidrio',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Baranda Acero Inoxidable y Vidrio Templado',
       en: 'Stainless Steel and Tempered Glass Railing'
@@ -221,20 +218,18 @@ const PRODUCTS = [
   // Servicios Especializados
   {
     key: 'espejos',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Espejos',
       en: 'Mirrors'
     },
     desc: {
-      es: 'Espejos a la medida con biselados, platinas decorativas, canteado y canteado brillantes. Tonalidades ahumado, natural y bronce. Con luz LED, estilo mosaico, completo y seccionado.',
-      en: 'Custom mirrors with beveled edges, decorative platinum, edge and bright edge finishes. Smoked, natural and bronze tones. With LED lighting, mosaic style, complete and sectioned.'
+      es: 'Espejos a la medida con biselados, platinas decorativas y acabados brillantes. Tonalidades ahumado, natural y bronce. Opciones con luz LED, estilo mosaico, completos o seccionados. Ideales para baños, salas y oficinas.',
+      en: 'Custom mirrors with beveled edges, decorative trims, and polished finishes. Smoked, natural, and bronze tones. Options with LED lighting, mosaic style, full or sectioned. Perfect for bathrooms, living rooms, and offices.'
     },
     type: 'especial'
   },
   {
     key: 'divisiones_oficinas',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Divisiones de Oficinas',
       en: 'Office Partitions'
@@ -247,7 +242,6 @@ const PRODUCTS = [
   },
   {
     key: 'mallas_mosquiteras_plisadas',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Mallas Mosquiteras Plisadas',
       en: 'Pleated Mosquito Nets'
@@ -260,7 +254,6 @@ const PRODUCTS = [
   },
   {
     key: 'disenos_aluminio',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Diseños en Aluminio',
       en: 'Aluminum Designs'
@@ -273,7 +266,6 @@ const PRODUCTS = [
   },
   {
     key: 'sistema_louver',
-    img: '/products/fondo_home.jpg',
     name: {
       es: 'Sistema Louver',
       en: 'Louver System'
@@ -294,9 +286,11 @@ const FILTERS = [
   { key: 'especial', es: 'Servicios Especiales', en: 'Special Services' }
 ];
 
-// FullCatalog component displays the complete product catalog with category filters and animated transitions.
-// It uses the useLanguage context for translations and manages filter state to show relevant products.
-
+/**
+ * FullCatalog component displays the complete product catalog with filters.
+ * @component
+ * @returns {JSX.Element}
+ */
 const FullCatalog = () => {
   const { language, t } = useLanguage();
   const router = useRouter();
@@ -335,13 +329,14 @@ const FullCatalog = () => {
             onClick={() => router.push(`/productos/${product.key}`)}
             style={{ cursor: 'pointer' }}
           >
-            <img 
+            <Image 
               src={getCloudinaryDirectUrl(getProductMainImage(product.key))} 
               alt={product.name[language]} 
-              className="catalog-img"
-              width={400}
-              height={300}
+              className="catalog-img" 
+              width={400} 
+              height={300} 
               style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              priority={filter === 'all'}
             />
             <div className="catalog-info">
               <h3>{product.name[language]}</h3>

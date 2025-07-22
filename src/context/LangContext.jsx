@@ -11,10 +11,12 @@ const translations = {
   en
 };
 
-// Language context for managing internationalization (i18n) across the app.
-// Provides translation utilities, language switching, and validation for translation files.
-
-// Validate translation file structure consistency (dev only)
+/**
+ * LanguageContext provides internationalization (i18n) support for the application.
+ * Includes translation utilities, language switching, and translation validation.
+ */
+// Validate translation file structure consistency (development only)
+// Warns if translation keys are missing or mismatched
 const validateTranslations = () => {
   const esKeys = Object.keys(es);
   const enKeys = Object.keys(en);
@@ -35,6 +37,12 @@ if (process.env.NODE_ENV === 'development') {
   validateTranslations();
 }
 
+/**
+ * LanguageProvider wraps the app and provides language state and translation functions.
+ * @param {object} props
+ * @param {React.ReactNode} props.children - Child components
+ * @returns {JSX.Element}
+ */
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('es');
   const [mounted, setMounted] = useState(false);
@@ -48,6 +56,7 @@ export const LanguageProvider = ({ children }) => {
   }, []);
 
   // Translation function with support for nested keys and variable interpolation
+  // Returns the translated string or the key if not found
   const t = (key, variables = {}) => {
     const keys = key.split('.');
     let value = translations[language];
@@ -74,6 +83,7 @@ export const LanguageProvider = ({ children }) => {
   };
 
   // Toggle between supported languages
+  // Persists user preference in localStorage
   const toggleLanguage = () => {
     const newLang = language === 'es' ? 'en' : 'es';
     setLanguage(newLang);
@@ -108,7 +118,10 @@ export const LanguageProvider = ({ children }) => {
   );
 };
 
-// Custom hook to access language context
+/**
+ * useLanguage custom hook to access language context.
+ * @returns {object} Language context value
+ */
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {
@@ -117,7 +130,11 @@ export const useLanguage = () => {
   return context;
 };
 
-// Additional hook for translation debugging in development
+/**
+ * useTranslationDebug custom hook for translation debugging in development.
+ * Warns about missing translations.
+ * @returns {object} Debug translation utilities
+ */
 export const useTranslationDebug = () => {
   const { language, t } = useLanguage();
   

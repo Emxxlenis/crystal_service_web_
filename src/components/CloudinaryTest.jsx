@@ -2,7 +2,13 @@
 
 import React from 'react';
 import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 
+/**
+ * CloudinaryTest component tests Cloudinary image rendering.
+ * @component
+ * @returns {JSX.Element}
+ */
 const CloudinaryTest = () => {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   
@@ -26,11 +32,11 @@ const CloudinaryTest = () => {
       {/* Prueba con URL directa */}
       <div style={{ margin: '20px 0' }}>
         <h4>URL directa de Cloudinary:</h4>
-        <img 
-          src={`https://res.cloudinary.com/${cloudName}/image/upload/v1751920744/puerta_automatizada3_gqmsyk.png`}
-          alt="URL directa"
-          width={300}
-          height={200}
+        <Image 
+          src={`https://res.cloudinary.com/${cloudName}/image/upload/v1751920744/puerta_automatizada3_gqmsyk.png`} 
+          alt="Direct URL" 
+          width={300} 
+          height={200} 
           style={{ border: '2px solid green' }}
         />
       </div>

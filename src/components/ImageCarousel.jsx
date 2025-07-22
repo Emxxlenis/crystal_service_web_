@@ -6,7 +6,7 @@ import '../App.css';
 
 const AUTO_SLIDE_INTERVAL = 3000; // 3 segundos
 
-const ImageCarousel = ({ images, productName }) => {
+const ImageCarousel = ({ images, productName, hideControls = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef(null);
 
@@ -56,36 +56,24 @@ const ImageCarousel = ({ images, productName }) => {
     return null;
   }
 
-  if (images.length === 1) {
-    return (
-      <div className="product-image-container">
-        <img
-          src={getCloudinaryDirectUrl(images[0])}
-          alt={productName}
-          className="product-detail-image"
-          width={600}
-          height={400}
-          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-        />
-      </div>
-    );
-  }
-
+  // Usar siempre el mismo layout para una o varias imágenes
   return (
     <div className="image-carousel-container">
       <div className="carousel-main">
-        <button
-          className="carousel-btn carousel-btn-prev"
-          onClick={prevImage}
-          aria-label="Previous image"
-        >
-          ‹
-        </button>
+        {images.length > 1 && !hideControls && (
+          <button
+            className="carousel-btn carousel-btn-prev"
+            onClick={prevImage}
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+        )}
 
         <div className="carousel-image-container">
           <img
             src={getCloudinaryDirectUrl(images[currentIndex])}
-            alt={`${productName} - Image ${currentIndex + 1}`}
+            alt={images.length > 1 ? `${productName} - Image ${currentIndex + 1}` : productName}
             className="product-detail-image"
             width={600}
             height={400}
@@ -93,13 +81,15 @@ const ImageCarousel = ({ images, productName }) => {
           />
         </div>
 
-        <button
-          className="carousel-btn carousel-btn-next"
-          onClick={nextImage}
-          aria-label="Next image"
-        >
-          ›
-        </button>
+        {images.length > 1 && !hideControls && (
+          <button
+            className="carousel-btn carousel-btn-next"
+            onClick={nextImage}
+            aria-label="Next image"
+          >
+            ›
+          </button>
+        )}
       </div>
     </div>
   );

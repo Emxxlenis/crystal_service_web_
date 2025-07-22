@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LangContext';
 import '../App.css';
+import Image from 'next/image';
 
 const SERVICES = [
   {
@@ -103,6 +104,11 @@ const SERVICES = [
   }
 ];
 
+/**
+ * Services component displays a list of services and their details.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Services = () => {
   const { language, t } = useLanguage();
   const [selected, setSelected] = useState(null);
@@ -123,7 +129,16 @@ const Services = () => {
             </button>
           </div>
           <div className="product-detail-imagebox">
-            <img src={service.img} alt={service.title[language]} className="product-detail-img-large" />
+            {/* Product image for the selected service */}
+            <Image 
+              src={service.img} 
+              alt={service.title[language]} 
+              className="product-detail-img-large" 
+              width={600} 
+              height={400} 
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -136,7 +151,14 @@ const Services = () => {
       <div className="products-grid">
         {SERVICES.map(service => (
           <div className="product-card" key={service.key}>
-            <img src={service.img} alt={service.title[language]} className="product-img" />
+            <Image 
+              src={service.img} 
+              alt={service.title[language]} 
+              className="product-img" 
+              width={320} 
+              height={320} 
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+            />
             <button className="product-btn" onClick={() => setSelected(service.key)}>
               {service.title[language]} +
             </button>

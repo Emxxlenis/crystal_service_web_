@@ -57,11 +57,6 @@ const PRODUCT_DETAILS = {
         'Interior design projects'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'ducha'
   },
   modelo_cy: {
@@ -111,10 +106,6 @@ const PRODUCT_DETAILS = {
         'Commercial facilities'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'ducha'
   },
   modelo_aqua_black: {
@@ -164,7 +155,6 @@ const PRODUCT_DETAILS = {
         'Elegant renovations'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'ducha'
   },
   puerta_abatible: {
@@ -216,11 +206,6 @@ const PRODUCT_DETAILS = {
         'Premium architecture spaces'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'ducha'
   },
   puertas_ducha_medida: {
@@ -272,7 +257,6 @@ const PRODUCT_DETAILS = {
         'Exclusive commercial projects'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'ducha'
   },
   vidrio_templado: {
@@ -320,10 +304,6 @@ const PRODUCT_DETAILS = {
         'Furniture and shelves'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'vidrio'
   },
   divisiones_bano: {
@@ -371,10 +351,6 @@ const PRODUCT_DETAILS = {
         'Restaurants and businesses'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'vidrio'
   },
   puertas_vidrio: {
@@ -422,7 +398,6 @@ const PRODUCT_DETAILS = {
         'Residential spaces'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'vidrio'
   },
   ventanas_aluminio: {
@@ -472,11 +447,6 @@ const PRODUCT_DETAILS = {
         'Renovations and new constructions'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'puertas_ventanas'
   },
   puertas_aluminio: {
@@ -526,7 +496,6 @@ const PRODUCT_DETAILS = {
         'Spaces requiring noise control'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'puertas_ventanas'
   },
   puerta_corrediza_europa: {
@@ -576,10 +545,6 @@ const PRODUCT_DETAILS = {
         'Luxury residences'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'puertas_ventanas'
   },
   puertas_automaticas: {
@@ -629,7 +594,6 @@ const PRODUCT_DETAILS = {
         'Airports and stations'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'puertas_ventanas'
   },
   ventanas_europa_corredizas: {
@@ -679,61 +643,6 @@ const PRODUCT_DETAILS = {
         'Renovation projects'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
-    type: 'puertas_ventanas'
-  },
-  puertas_plegables: {
-    name: {
-      es: 'Puertas Plegables',
-      en: 'Folding Doors'
-    },
-    desc: {
-      es: 'Plegables a la medida con variedad en tonos de aluminio y vidrios claros y reflectivos. Dale amplitud a tus espacios con sistemas de apertura versátiles.',
-      en: 'Custom folding doors with variety in aluminum tones and clear and reflective glass. Give amplitude to your spaces with versatile opening systems.'
-    },
-    longDesc: {
-      es: 'Nuestras puertas plegables están diseñadas a la medida para maximizar el espacio disponible. Con variedad en tonos de aluminio y vidrios claros y reflectivos, permiten dar amplitud a tus espacios con sistemas de apertura versátiles que se adaptan a cualquier necesidad.',
-      en: 'Our folding doors are custom-designed to maximize available space. With variety in aluminum tones and clear and reflective glass, they allow giving amplitude to your spaces with versatile opening systems that adapt to any need.'
-    },
-    features: {
-      es: [
-        'Plegables a la medida',
-        'Variedad en tonos de aluminio',
-        'Vidrios claros y reflectivos',
-        'Sistemas de apertura versátiles',
-        'Maximización del espacio',
-        'Diseño personalizado'
-      ],
-      en: [
-        'Custom folding doors',
-        'Variety in aluminum tones',
-        'Clear and reflective glass',
-        'Versatile opening systems',
-        'Space maximization',
-        'Custom design'
-      ]
-    },
-    applications: {
-      es: [
-        'Terrazas y balcones',
-        'Conectores interior-exterior',
-        'Espacios multifuncionales',
-        'Restaurantes y bares',
-        'Viviendas modernas'
-      ],
-      en: [
-        'Terraces and balconies',
-        'Interior-exterior connectors',
-        'Multifunctional spaces',
-        'Restaurants and bars',
-        'Modern homes'
-      ]
-    },
-    img: '/products/fondo_home.jpg',
     type: 'puertas_ventanas'
   },
   puerta_tipo_francesa: {
@@ -783,10 +692,6 @@ const PRODUCT_DETAILS = {
         'Premium architecture spaces'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'puertas_ventanas'
   },
   puerta_vidrio_templado: {
@@ -795,49 +700,144 @@ const PRODUCT_DETAILS = {
       en: 'Tempered Glass Door'
     },
     desc: {
-      es: 'Puertas en vidrio templado abatibles o corredizas con herrajes completos. Gran variedad de herrajes en diseño y colores. Cerraduras de piso o de centro.',
-      en: 'Hinged or sliding tempered glass doors with complete hardware. Great variety of hardware in design and colors. Floor or center locks.'
+      es: 'Puertas de vidrio templado de alta resistencia y durabilidad. Ideales para espacios modernos y elegantes.',
+      en: 'High-resistance and durable tempered glass doors. Ideal for modern and elegant spaces.'
     },
     longDesc: {
-      es: 'Nuestras puertas de vidrio templado ofrecen la máxima transparencia y elegancia. Disponibles en configuración abatible o corrediza con herrajes completos incluidos. Gran variedad de herrajes en diseño y colores para personalizar completamente tu puerta. Cerraduras de piso o de centro según preferencia.',
-      en: 'Our tempered glass doors offer maximum transparency and elegance. Available in hinged or sliding configuration with complete hardware included. Great variety of hardware in design and colors to completely customize your door. Floor or center locks according to preference.'
+      es: 'Nuestras puertas de vidrio templado combinan elegancia y funcionalidad para crear espacios modernos y luminosos. El vidrio templado ofrece máxima seguridad y durabilidad, siendo ideal para aplicaciones residenciales y comerciales que requieren transparencia y resistencia.',
+      en: 'Our tempered glass doors combine elegance and functionality to create modern and bright spaces. Tempered glass offers maximum safety and durability, being ideal for residential and commercial applications that require transparency and resistance.'
     },
     features: {
       es: [
         'Vidrio templado de alta resistencia',
-        'Configuración abatible o corrediza',
-        'Herrajes completos incluidos',
-        'Gran variedad de herrajes',
-        'Cerraduras de piso o de centro',
-        'Transparencia y elegancia máximas'
+        'Múltiples opciones de acabado',
+        'Instalación profesional',
+        'Garantía de durabilidad',
+        'Diseño personalizable',
+        'Mantenimiento mínimo'
       ],
       en: [
         'High-resistance tempered glass',
-        'Hinged or sliding configuration',
-        'Complete hardware included',
-        'Great variety of hardware',
-        'Floor or center locks',
-        'Maximum transparency and elegance'
+        'Multiple finish options',
+        'Professional installation',
+        'Durability guarantee',
+        'Customizable design',
+        'Minimal maintenance'
       ]
     },
     applications: {
       es: [
-        'Entradas principales modernas',
-        'Divisiones interiores elegantes',
-        'Oficinas corporativas',
-        'Hoteles y restaurantes',
-        'Espacios comerciales premium'
+        'Entradas principales',
+        'Divisiones interiores',
+        'Puertas de oficina',
+        'Espacios comerciales',
+        'Aplicaciones residenciales'
       ],
       en: [
-        'Modern main entrances',
-        'Elegant interior divisions',
-        'Corporate offices',
-        'Hotels and restaurants',
-        'Premium commercial spaces'
+        'Main entrances',
+        'Interior partitions',
+        'Office doors',
+        'Commercial spaces',
+        'Residential applications'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'puertas_ventanas'
+  },
+  pergola: {
+    name: {
+      es: 'Pérgolas y Estructuras',
+      en: 'Pergolas and Structures'
+    },
+    desc: {
+      es: 'Diseño y construcción de pérgolas personalizadas en aluminio y acero inoxidable para espacios exteriores.',
+      en: 'Design and construction of custom pergolas in aluminum and stainless steel for outdoor spaces.'
+    },
+    longDesc: {
+      es: 'Nuestras pérgolas y estructuras están diseñadas para transformar espacios exteriores en áreas funcionales y elegantes. Utilizamos materiales premium como aluminio y acero inoxidable para garantizar durabilidad y resistencia climática. Cada proyecto es personalizado según las necesidades específicas del cliente y las características del espacio.',
+      en: 'Our pergolas and structures are designed to transform outdoor spaces into functional and elegant areas. We use premium materials such as aluminum and stainless steel to ensure durability and weather resistance. Each project is customized according to the specific needs of the client and the characteristics of the space.'
+    },
+    features: {
+      es: [
+        'Diseño personalizado',
+        'Materiales premium (aluminio y acero)',
+        'Resistencia climática',
+        'Instalación profesional',
+        'Acabados premium',
+        'Mantenimiento mínimo'
+      ],
+      en: [
+        'Custom design',
+        'Premium materials (aluminum and steel)',
+        'Weather resistance',
+        'Professional installation',
+        'Premium finishes',
+        'Minimal maintenance'
+      ]
+    },
+    applications: {
+      es: [
+        'Terrazas residenciales',
+        'Jardines privados',
+        'Áreas de piscina',
+        'Espacios comerciales',
+        'Proyectos de paisajismo'
+      ],
+      en: [
+        'Residential terraces',
+        'Private gardens',
+        'Pool areas',
+        'Commercial spaces',
+        'Landscaping projects'
+      ]
+    },
+    type: 'especial'
+  },
+  smart_glass: {
+    name: {
+      es: 'Smart Glass (Papel Esmerilado)',
+      en: 'Smart Glass (Frosted Film)'
+    },
+    desc: {
+      es: 'Papel esmerilado decorativo para privacidad en oficinas, divisiones y vidrios. Instalación rápida y limpia.',
+      en: 'Decorative frosted film for privacy on offices, partitions, and glass. Fast and clean installation.'
+    },
+    longDesc: {
+      es: 'Ofrecemos papel esmerilado para vidrios, ideal para oficinas, divisiones y espacios que requieren privacidad. Solución estética, económica y de fácil instalación.',
+      en: 'We offer frosted film for glass, ideal for offices, partitions, and spaces requiring privacy. An aesthetic, affordable, and easy-to-install solution.'
+    },
+    features: {
+      es: [
+        'Privacidad inmediata',
+        'Acabado decorativo',
+        'Fácil de instalar',
+        'Sin obras ni polvo',
+        'Económico'
+      ],
+      en: [
+        'Instant privacy',
+        'Decorative finish',
+        'Easy to install',
+        'No construction or dust',
+        'Affordable'
+      ]
+    },
+    applications: {
+      es: [
+        'Oficinas',
+        'Divisiones de vidrio',
+        'Salas de reuniones',
+        'Consultorios',
+        'Hogar'
+      ],
+      en: [
+        'Offices',
+        'Glass partitions',
+        'Meeting rooms',
+        'Clinics',
+        'Home'
+      ]
+    },
+    type: 'especial'
   },
   barandas_acero: {
     name: {
@@ -884,10 +884,6 @@ const PRODUCT_DETAILS = {
         'Corporate offices'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'acero'
   },
   limpieza_remocion_oxido: {
@@ -935,7 +931,6 @@ const PRODUCT_DETAILS = {
         'Industrial installations'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   // Barandas de Acero Inoxidable y Vidrio - Nuevos Productos
@@ -986,7 +981,6 @@ const PRODUCT_DETAILS = {
         'Commercial spaces'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'barandas'
   },
   barandas_vidrio_templado: {
@@ -1036,11 +1030,6 @@ const PRODUCT_DETAILS = {
         'Premium architecture spaces'
       ]
     },
-    images: [
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg',
-      '/products/fondo_home.jpg'
-    ],
     type: 'barandas'
   },
   baranda_acero_vidrio: {
@@ -1090,7 +1079,6 @@ const PRODUCT_DETAILS = {
         'Public spaces'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'barandas'
   },
   puertas_automatizadas: {
@@ -1140,7 +1128,6 @@ const PRODUCT_DETAILS = {
         'Airports and stations'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   // Servicios Especializados - Nuevos Productos
@@ -1191,7 +1178,6 @@ const PRODUCT_DETAILS = {
         'Gyms and sports centers'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   divisiones_oficinas: {
@@ -1241,7 +1227,6 @@ const PRODUCT_DETAILS = {
         'Collaborative work zones'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   mallas_mosquiteras_plisadas: {
@@ -1291,7 +1276,6 @@ const PRODUCT_DETAILS = {
         'Commercial spaces'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   disenos_aluminio: {
@@ -1341,7 +1325,6 @@ const PRODUCT_DETAILS = {
         'Architectural projects'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
   sistema_louver: {
@@ -1391,7 +1374,6 @@ const PRODUCT_DETAILS = {
         'Architectural projects'
       ]
     },
-    img: '/products/fondo_home.jpg',
     type: 'especial'
   },
 };
@@ -1484,12 +1466,12 @@ const ProductDetail = ({ productSlug }) => {
         
         {/* WhatsApp contact button for product quote */}
         <div className="product-whatsapp-container">
-          <button 
-            onClick={handleWhatsAppClick}
-            className="product-whatsapp-btn"
-          >
-            {t('product.quoteWhatsapp')}
-          </button>
+                      <button 
+              onClick={handleWhatsAppClick}
+              className="product-whatsapp-btn"
+            >
+              {t('product.quoteWhatsapp')}
+            </button>
         </div>
       </div>
     </section>

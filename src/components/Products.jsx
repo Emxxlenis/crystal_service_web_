@@ -3,11 +3,13 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LangContext';
 import '../App.css';
+import { getProductMainImage, getCloudinaryDirectUrl } from '../utils/cloudinaryConfig';
+import Image from 'next/image';
 
 const PRODUCTS = [
   {
     key: 'puertas_ducha_medida',
-    img: 'https://res.cloudinary.com/dqkjd9mdl/image/upload/v1751920744/puerta_automatizada3_gqmsyk.png',
+    img: '/products/fondo_home.jpg',
     title: {
       es: 'PUERTAS DE DUCHA A LA MEDIDA',
       en: 'CUSTOM SHOWER DOORS'
@@ -167,6 +169,11 @@ const PRODUCTS = [
   }
 ];
 
+/**
+ * Products component displays a list of products and their details.
+ * @component
+ * @returns {JSX.Element}
+ */
 const Products = () => {
   const { language, t } = useLanguage();
   const [selected, setSelected] = useState(null);
@@ -197,7 +204,15 @@ const Products = () => {
             </button>
           </div>
           <div className="product-detail-imagebox">
-            <img src={product.img} alt={product.title[language]} className="product-detail-img-large" />
+            <Image 
+              src={getCloudinaryDirectUrl(getProductMainImage(product.key))} 
+              alt={product.title[language]} 
+              className="product-detail-img-large" 
+              width={600} 
+              height={400} 
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -210,7 +225,14 @@ const Products = () => {
       <div className="products-grid">
         {PRODUCTS.map(product => (
           <div className="product-card" key={product.key}>
-            <img src={product.img} alt={product.title[language]} className="product-img" />
+            <Image 
+              src={getCloudinaryDirectUrl(getProductMainImage(product.key))} 
+              alt={product.title[language]} 
+              className="product-img" 
+              width={320} 
+              height={320} 
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+            />
             <button className="product-btn" onClick={() => setSelected(product.key)}>
               {product.title[language]} +
             </button>

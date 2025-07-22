@@ -13,10 +13,10 @@
     "toggleMenu": "Alternar menú"
   },
   "hero": {
-    "title": "Soluciones en Vidrio, Aluminio y Acero Inoxidable en Panamá",
-    "subtitle": "Más de 40 locales comerciales y decenas de clientes residenciales confían en Crystal Service JJ para transformar sus espacios con innovación, calidad y tecnología.",
+    "title": "Soluciones en Puertas de Alta Calidad en Panamá",
+    "subtitle": "Con 8 años de experiencia en el diseño, fabricación y comercialización de puertas para uso residencial, comercial e industrial. Productos que combinan seguridad, diseño moderno y durabilidad.",
     "whatsapp": "WhatsApp",
-    "trust": "Solicita tu cotización express. Instalación en todo Panamá."
+    "trust": "Solicita tu cotización. Instalación profesional en todo Panamá."
   },
   "catalog": {
     "title": "Catálogo de Productos",
@@ -194,32 +194,32 @@
     }
   },
   "services": {
-    "title": "Servicios Especializados",
-    "description": "En Crystal Service JJ ofrecemos un portafolio completo de servicios especializados en puertas de ducha, puertas y ventanas, divisiones de oficinas, barandas de acero inoxidable y vidrio, fachadas modernas, muros cortina, Smart Glass, puertas automatizadas, cerramientos, mantenimiento y limpieza profesional. Realizamos la instalación en todo Panamá y garantizamos mano de obra de calidad, además de brindar servicio express para quienes lo requieran.",
+    "title": "Nuestros Servicios",
+    "description": "Nuestro compromiso es brindar soluciones funcionales y estéticas que satisfagan las necesidades del cliente, cumpliendo con altos estándares de fabricación y ofreciendo un servicio profesional y personalizado.",
     "ducha": "Puertas de ducha, divisiones de baño, puertas de vidrio templado",
-    "puertas_ventanas": "Ventanas y puertas de aluminio, sistema Louver, ventanas tipo Europa, puertas corredizas y automatizadas",
+    "puertas_ventanas": "Puertas de madera sólida y semi sólida, puertas metálicas y de seguridad, puertas interiores y exteriores, puertas corredizas y plegables",
     "divisiones": "Divisiones de oficinas, cerramientos, muros cortina, fachadas modernas",
     "barandas": "Barandas y estructuras en acero inoxidable, vidrio templado, espejos, Smart Glass",
-    "special": "Mantenimiento, limpieza profesional y servicios especializados",
+    "special": "Asesoría personalizada, instalación profesional, mantenimiento y limpieza profesional",
     "detail": {
       "quote": "Cotizar servicio",
       "backToServices": "Volver a servicios"
     }
   },
   "about": {
-    "title": "Quiénes Somos",
-    "subtitle": "Somos una empresa panameña especializada en servicios de vidrio templado, aluminio y acero inoxidable. Nos hemos consolidado en el mercado nacional gracias a la confianza de más de 40 clientes comerciales y una sólida presencia digital. Ofrecemos soluciones innovadoras y personalizadas para proyectos residenciales y comerciales en todo Panamá.",
+    "title": "Sobre Nosotros",
+    "subtitle": "Empresa panameña con 8 años de experiencia en puertas y ventanas para proyectos residenciales, comerciales e industriales. Ofrecemos calidad, seguridad y diseño moderno adaptados a Panamá.",
     "history": {
-      "title": "Nuestra Propuesta de Valor",
-      "description": "En Crystal Service JJ ofrecemos una experiencia integral, acompañando a nuestros clientes desde el suministro hasta la instalación completa, con cobertura nacional y mano de obra garantizada. Nos destacamos por nuestra innovación tecnológica en soluciones como Smart Glass y sistemas automatizados, así como por brindar atención personalizada y servicio express para satisfacer las necesidades de cada proyecto."
+      "title": "Trayectoria",
+      "description": "8 años en el mercado panameño, consolidándonos como referencia en puertas de alta calidad. Nos enfocamos en seguridad, funcionalidad y diseño, con materiales duraderos y tecnología moderna."
     },
     "mission": {
       "title": "Misión",
-      "description": "Ofrecer soluciones integrales en vidrio, aluminio y acero, superando las expectativas de nuestros clientes a través de la calidad, la innovación y el servicio."
+      "description": "Fabricar y comercializar puertas y ventanas de calidad, seguras y estéticas, con soluciones confiables y atención al cliente."
     },
     "vision": {
       "title": "Visión",
-      "description": "Ser la empresa líder en el sector, reconocida por la excelencia, la confianza y la satisfacción de nuestros clientes."
+      "description": "Ser líderes en Panamá en puertas y ventanas, reconocidos por excelencia, innovación y atención personalizada."
     }
   },
   "contact": {
@@ -244,7 +244,7 @@
   },
   "projects": {
     "title": "Nuestros Clientes",
-    "description": "Hemos trabajado con más de 40 locales comerciales, restaurantes, oficinas, hoteles y residencias en todo Panamá. Nos enorgullece mostrar los resultados y testimonios de quienes han confiado en nosotros para sus proyectos."
+    "description": "Con una trayectoria de 8 años en el mercado panameño, hemos logrado ganarnos la confianza de clientes residenciales, comerciales e institucionales en todo el país. Nos enorgullece mostrar los resultados de quienes han confiado en nosotros para sus proyectos de construcción y remodelación."
   },
   "footer": {
     "contact": "Contacto",
@@ -253,7 +253,6 @@
     "privacyPolicy": "Política de privacidad",
     "termsConditions": "Términos y condiciones",
     "cookiesPolicy": "Política de cookies",
-    "copyright": "Crystal Service JJ © 2024.",
     "address": "Panamá, cobertura nacional"
   },
   "privacy": {
