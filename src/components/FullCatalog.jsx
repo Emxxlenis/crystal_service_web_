@@ -182,12 +182,12 @@ const PRODUCTS = [
   {
     key: 'smart_glass',
     name: {
-      es: 'Smart Glass (Papel Esmerilado)',
-      en: 'Smart Glass (Frosted Film)'
+      es: 'Smart Glass (Papel inteligente)',
+      en: 'Smart Glass (Smart Film)'
     },
     desc: {
-      es: 'Papel esmerilado decorativo para privacidad en oficinas, divisiones y vidrios. Solución estética y moderna para separar ambientes, controlar la visibilidad y mejorar la imagen de tus espacios. Instalación rápida y limpia.',
-      en: 'Decorative frosted film for privacy on offices, partitions, and glass. A modern and aesthetic solution to separate spaces, control visibility, and enhance the look of your environment. Fast and clean installation.'
+      es: 'Solución inteligente para privacidad y control de luz en oficinas, divisiones y vidrios. Permite transformar espacios con solo un toque, brindando confort, modernidad y elegancia. Instalación rápida y limpia.',
+      en: 'Smart solution for privacy and light control on offices, partitions, and glass. Instantly transforms spaces with a touch, providing comfort, modern style, and elegance. Fast and clean installation.'
     },
     type: 'especial'
   },

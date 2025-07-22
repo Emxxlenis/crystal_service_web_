@@ -78,12 +78,12 @@ const PRODUCTS = [
   {
     key: 'smart_glass',
     name: {
-      es: 'Smart Glass y Tecnología',
-      en: 'Smart Glass and Technology'
+      es: 'Smart Glass (Papel inteligente)',
+      en: 'Smart Glass (Smart Film)'
     },
     desc: {
-      es: 'Vidrio inteligente con control de privacidad, divisores automáticos y sistemas de control. Tecnología avanzada para espacios modernos y funcionales.',
-      en: 'Smart glass with privacy control, automatic partitions and control systems. Advanced technology for modern and functional spaces.'
+      es: 'Solución inteligente para privacidad y control de luz en oficinas, divisiones y vidrios. Tecnología avanzada para espacios modernos y funcionales.',
+      en: 'Smart solution for privacy and light control on offices, partitions, and glass. Advanced technology for modern and functional spaces.'
     }
   }
 ];

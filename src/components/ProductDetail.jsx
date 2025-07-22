@@ -794,31 +794,31 @@ const PRODUCT_DETAILS = {
   },
   smart_glass: {
     name: {
-      es: 'Smart Glass (Papel Esmerilado)',
-      en: 'Smart Glass (Frosted Film)'
+      es: 'Smart Glass (Papel inteligente)',
+      en: 'Smart Glass (Smart Film)'
     },
     desc: {
-      es: 'Papel esmerilado decorativo para privacidad en oficinas, divisiones y vidrios. Instalación rápida y limpia.',
-      en: 'Decorative frosted film for privacy on offices, partitions, and glass. Fast and clean installation.'
+      es: 'Solución inteligente para privacidad y control de luz en oficinas, divisiones y vidrios. Instalación rápida y limpia.',
+      en: 'Smart solution for privacy and light control on offices, partitions, and glass. Fast and clean installation.'
     },
     longDesc: {
-      es: 'Ofrecemos papel esmerilado para vidrios, ideal para oficinas, divisiones y espacios que requieren privacidad. Solución estética, económica y de fácil instalación.',
-      en: 'We offer frosted film for glass, ideal for offices, partitions, and spaces requiring privacy. An aesthetic, affordable, and easy-to-install solution.'
+      es: 'Ofrecemos tecnología de papel inteligente para vidrios, ideal para oficinas, divisiones y espacios que requieren privacidad y control de luz. Solución estética, moderna y de fácil instalación.',
+      en: 'We offer smart film technology for glass, ideal for offices, partitions, and spaces requiring privacy and light control. An aesthetic, modern, and easy-to-install solution.'
     },
     features: {
       es: [
-        'Privacidad inmediata',
-        'Acabado decorativo',
+        'Privacidad instantánea',
+        'Control de luz',
         'Fácil de instalar',
         'Sin obras ni polvo',
-        'Económico'
+        'Moderno y estético'
       ],
       en: [
         'Instant privacy',
-        'Decorative finish',
+        'Light control',
         'Easy to install',
         'No construction or dust',
-        'Affordable'
+        'Modern and aesthetic'
       ]
     },
     applications: {
